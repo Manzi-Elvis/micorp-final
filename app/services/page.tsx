@@ -1,0 +1,172 @@
+"use client"
+
+import { useTranslations } from "@/hooks/use-translations"
+import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Code, Globe, Smartphone, Database, LineChart, ShieldCheck, Cloud, Cpu } from "lucide-react"
+
+export default function ServicesPage() {
+  const { t } = useTranslations()
+
+  const services = [
+    {
+      title: t("services.customSoftware.title"),
+      description: t("services.customSoftware.description"),
+      icon: <Code className="h-6 w-6 text-blue-600" />,
+      tags: [t("services.tags.enterprise"), t("services.tags.workflow"), t("services.tags.integration")],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.webDevelopment.title"),
+      description: t("services.webDevelopment.description"),
+      icon: <Globe className="h-6 w-6 text-blue-600" />,
+      tags: [
+        t("services.tags.frontend"),
+        t("services.tags.backend"),
+        t("services.tags.ecommerce"),
+        t("services.tags.cms"),
+      ],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.mobileDevelopment.title"),
+      description: t("services.mobileDevelopment.description"),
+      icon: <Smartphone className="h-6 w-6 text-blue-600" />,
+      tags: [
+        t("services.tags.ios"),
+        t("services.tags.android"),
+        t("services.tags.reactNative"),
+        t("services.tags.flutter"),
+      ],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.databaseSolutions.title"),
+      description: t("services.databaseSolutions.description"),
+      icon: <Database className="h-6 w-6 text-blue-600" />,
+      tags: [
+        t("services.tags.sql"),
+        t("services.tags.nosql"),
+        t("services.tags.migration"),
+        t("services.tags.performance"),
+      ],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.dataAnalytics.title"),
+      description: t("services.dataAnalytics.description"),
+      icon: <LineChart className="h-6 w-6 text-blue-600" />,
+      tags: [t("services.tags.bi"), t("services.tags.predictive"), t("services.tags.visualization")],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.cybersecurity.title"),
+      description: t("services.cybersecurity.description"),
+      icon: <ShieldCheck className="h-6 w-6 text-blue-600" />,
+      tags: [t("services.tags.security"), t("services.tags.penetration"), t("services.tags.compliance")],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.cloudServices.title"),
+      description: t("services.cloudServices.description"),
+      icon: <Cloud className="h-6 w-6 text-blue-600" />,
+      tags: [t("services.tags.aws"), t("services.tags.azure"), t("services.tags.google"), t("services.tags.migration")],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+    {
+      title: t("services.aiMl.title"),
+      description: t("services.aiMl.description"),
+      icon: <Cpu className="h-6 w-6 text-blue-600" />,
+      tags: [t("services.tags.models"), t("services.tags.nlp"), t("services.tags.vision")],
+      image: "/placeholder.svg?height=300&width=400",
+    },
+  ]
+
+  return (
+    <div className="container mx-auto px-4 py-16 space-y-16">
+      <section className="space-y-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("services.pageTitle")}</h1>
+        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("services.pageDescription")}</p>
+      </section>
+
+      <section className="grid md:grid-cols-2 gap-8">
+        {services.map((service, index) => (
+          <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
+            <div className="relative h-48">
+              <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-4">
+                  <h3 className="text-xl font-bold text-white">{service.title}</h3>
+                </div>
+              </div>
+            </div>
+            <CardContent className="p-6 space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-2">{service.icon}</div>
+              </div>
+              <p className="text-muted-foreground">{service.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {service.tags.map((tag, tagIndex) => (
+                  <Badge key={tagIndex} variant="secondary" className="px-2 py-1">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </section>
+
+      <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold">{t("services.approach.title")}</h2>
+            <p className="text-lg text-muted-foreground">{t("services.approach.description")}</p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
+                  <div className="h-2 w-2 rounded-full bg-blue-600"></div>
+                </div>
+                <span className="text-muted-foreground">{t("services.approach.step1")}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
+                  <div className="h-2 w-2 rounded-full bg-blue-600"></div>
+                </div>
+                <span className="text-muted-foreground">{t("services.approach.step2")}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
+                  <div className="h-2 w-2 rounded-full bg-blue-600"></div>
+                </div>
+                <span className="text-muted-foreground">{t("services.approach.step3")}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
+                  <div className="h-2 w-2 rounded-full bg-blue-600"></div>
+                </div>
+                <span className="text-muted-foreground">{t("services.approach.step4")}</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
+                  <div className="h-2 w-2 rounded-full bg-blue-600"></div>
+                </div>
+                <span className="text-muted-foreground">{t("services.approach.step5")}</span>
+              </li>
+            </ul>
+          </div>
+          <div className="relative h-[300px] rounded-xl overflow-hidden">
+            <Image
+              src="/placeholder.svg?height=600&width=800"
+              alt={t("services.approach.imageAlt")}
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
