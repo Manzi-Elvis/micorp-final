@@ -91,7 +91,7 @@ export default function TeamPage() {
       name: t("team.members.faylinn.name"),
       role: t("team.members.faylinn.role"),
       bio: t("team.members.faylinn.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/faylinn.png?height=400&width=300",
       social: {
         github: "#",
         linkedin: "#",
