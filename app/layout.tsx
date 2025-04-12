@@ -9,6 +9,7 @@ import FirstVisitModal from "@/components/first-visit-modal"
 import ScrollToTop from "@/components/scroll-to-top"
 import ResetScroll from "@/components/reset-scroll"
 import OfflineHandler from "@/app/offline"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -50,6 +51,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             <div className="flex min-h-screen flex-col">
+              <Analytics />
               <Navbar />
               <main className="flex-1">{children}</main>
               <Footer />
