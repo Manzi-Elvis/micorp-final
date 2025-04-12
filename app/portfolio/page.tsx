@@ -13,45 +13,24 @@ export default function PortfolioPage() {
 
   const projects = [
     {
-      title: t("portfolio.projects.nexusHealth.title"),
-      description: t("portfolio.projects.nexusHealth.description"),
-      image: "/placeholder.svg?height=600&width=800",
+      title: t("portfolio.projects.watch.title"),
+      description: t("portfolio.projects.watch.description"),
+      image: "/portfolio/watch.png?height=600&width=800",
       tags: [t("portfolio.tags.healthcare"), t("portfolio.tags.webApp"), t("portfolio.tags.mobileApp")],
       link: "#",
     },
     {
-      title: t("portfolio.projects.ecoTrack.title"),
-      description: t("portfolio.projects.ecoTrack.description"),
-      image: "/placeholder.svg?height=600&width=800",
+      title: t("portfolio.projects.yup.title"),
+      description: t("portfolio.projects.yup.description"),
+      image: "/portfolio/yup.png?height=600&width=800",
       tags: [t("portfolio.tags.dataAnalytics"), t("portfolio.tags.iot"), t("portfolio.tags.dashboard")],
       link: "#",
     },
     {
       title: t("portfolio.projects.finEdge.title"),
       description: t("portfolio.projects.finEdge.description"),
-      image: "/placeholder.svg?height=600&width=800",
+      image: "/portfolio/sms.png?height=600&width=800",
       tags: [t("portfolio.tags.finance"), t("portfolio.tags.realtime"), t("portfolio.tags.security")],
-      link: "#",
-    },
-    {
-      title: t("portfolio.projects.retailPulse.title"),
-      description: t("portfolio.projects.retailPulse.description"),
-      image: "/placeholder.svg?height=600&width=800",
-      tags: [t("portfolio.tags.retail"), t("portfolio.tags.ai"), t("portfolio.tags.inventory")],
-      link: "#",
-    },
-    {
-      title: t("portfolio.projects.eduConnect.title"),
-      description: t("portfolio.projects.eduConnect.description"),
-      image: "/placeholder.svg?height=600&width=800",
-      tags: [t("portfolio.tags.education"), t("portfolio.tags.elearning"), t("portfolio.tags.contentManagement")],
-      link: "#",
-    },
-    {
-      title: t("portfolio.projects.logisticsPro.title"),
-      description: t("portfolio.projects.logisticsPro.description"),
-      image: "/placeholder.svg?height=600&width=800",
-      tags: [t("portfolio.tags.logistics"), t("portfolio.tags.routeOptimization"), t("portfolio.tags.tracking")],
       link: "#",
     },
   ]

@@ -404,19 +404,19 @@ export const en = {
       tracking: "Tracking",
     },
     projects: {
-      nexusHealth: {
-        title: "NexusHealth Platform",
+      watch: {
+        title: "Micorp Movies",
         description:
-          "A comprehensive healthcare management system that streamlines patient care and administrative processes.",
+          "A movie streaming website.",
       },
-      ecoTrack: {
-        title: "EcoTrack Analytics",
+      yup: {
+        title: "Youth Uplift Initiative",
         description:
-          "An environmental monitoring platform that helps organizations track and reduce their carbon footprint.",
+          "Empower young people in Rwanda through education, community development, and sustainable programs that create lasting change.",
       },
       finEdge: {
-        title: "FinEdge Trading System",
-        description: "A secure, high-performance trading platform for financial institutions with real-time analytics.",
+        title: "School Management System",
+        description: "A secure, high-performance school management system.",
       },
       retailPulse: {
         title: "RetailPulse",
