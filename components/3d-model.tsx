@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react"
+import { useRef, useEffect } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { OrbitControls, ContactShadows } from "@react-three/drei"
 import { motion } from "framer-motion"
@@ -11,8 +11,10 @@ function AnimatedCube({ color = "#3b82f6" }) {
   const meshRef = useRef()
 
   useFrame((state, delta) => {
-    meshRef.current.rotation.x += delta * 0.2
-    meshRef.current.rotation.y += delta * 0.3
+    if (meshRef.current) {
+      meshRef.current.rotation.x += delta * 0.2
+      meshRef.current.rotation.y += delta * 0.3
+    }
   })
 
   return (
@@ -28,8 +30,10 @@ function AnimatedSphere({ position = [2, 0, 0], color = "#60a5fa" }) {
   const meshRef = useRef()
 
   useFrame((state, delta) => {
-    meshRef.current.rotation.x += delta * 0.3
-    meshRef.current.rotation.y += delta * 0.2
+    if (meshRef.current) {
+      meshRef.current.rotation.x += delta * 0.3
+      meshRef.current.rotation.y += delta * 0.2
+    }
   })
 
   return (
@@ -45,8 +49,10 @@ function AnimatedTorus({ position = [-2, 0, 0], color = "#93c5fd" }) {
   const meshRef = useRef()
 
   useFrame((state, delta) => {
-    meshRef.current.rotation.x += delta * 0.2
-    meshRef.current.rotation.y += delta * 0.3
+    if (meshRef.current) {
+      meshRef.current.rotation.x += delta * 0.2
+      meshRef.current.rotation.y += delta * 0.3
+    }
   })
 
   return (
@@ -71,19 +77,12 @@ function Scene() {
 export default function ThreeDModel({ height = 400 }) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return <div style={{ height: `${height}px` }} />
 
   return (
     <motion.div
       ref={ref}
       initial={{ opacity: 0 }}
-      animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 0.5 }}
       style={{ height: `${height}px` }}
       className="w-full rounded-xl overflow-hidden bg-blue-50 dark:bg-blue-950/30"
@@ -98,4 +97,3 @@ export default function ThreeDModel({ height = 400 }) {
     </motion.div>
   )
 }
-

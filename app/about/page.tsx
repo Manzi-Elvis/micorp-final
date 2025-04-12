@@ -94,7 +94,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-[1fr_2fr]">
               <div className="relative h-[300px] md:h-auto">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src="/members/chaste.jpg?height=400&width=300"
                   alt={t("about.founder.name")}
                   fill
                   className="object-cover"
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <div className="flex gap-2">
                   <Badge variant="outline" className="px-3 py-1">
                     <a
-                      href="https://github.com/Djsensei1/"
+                      href="https://github.com/chaste-djaziri"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1"
@@ -135,6 +135,16 @@ export default function AboutPage() {
                       className="flex items-center gap-1"
                     >
                       {t("about.founder.portfolio")}
+                    </a>
+                  </Badge>
+                  <Badge variant="outline" className="px-3 py-1">
+                    <a
+                      href="https://www.linkedin.com/in/chaste-djaziri-6bb4b62a5/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1"
+                    >
+                      {t("about.founder.linkedin")}
                     </a>
                   </Badge>
                 </div>

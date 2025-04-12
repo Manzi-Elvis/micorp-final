@@ -14,7 +14,7 @@ export default function TeamPage() {
       name: t("team.members.chaste.name"),
       role: t("team.members.chaste.role"),
       bio: t("team.members.chaste.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/chaste.jpg?height=400&width=300",
       social: {
         github: "https://github.com/Djsensei1/",
         linkedin: "#",
@@ -22,9 +22,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.sarah.name"),
-      role: t("team.members.sarah.role"),
-      bio: t("team.members.sarah.bio"),
+      name: t("team.members.pazzo.name"),
+      role: t("team.members.pazzo.role"),
+      bio: t("team.members.pazzo.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -33,9 +33,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.marcus.name"),
-      role: t("team.members.marcus.role"),
-      bio: t("team.members.marcus.bio"),
+      name: t("team.members.paccy.name"),
+      role: t("team.members.paccy.role"),
+      bio: t("team.members.paccy.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -44,9 +44,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.aisha.name"),
-      role: t("team.members.aisha.role"),
-      bio: t("team.members.aisha.bio"),
+      name: t("team.members.queen.name"),
+      role: t("team.members.queen.role"),
+      bio: t("team.members.queen.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -55,9 +55,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.david.name"),
-      role: t("team.members.david.role"),
-      bio: t("team.members.david.bio"),
+      name: t("team.members.josh.name"),
+      role: t("team.members.josh.role"),
+      bio: t("team.members.josh.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -66,10 +66,10 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.elena.name"),
-      role: t("team.members.elena.role"),
-      bio: t("team.members.elena.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      name: t("team.members.amina.name"),
+      role: t("team.members.amina.role"),
+      bio: t("team.members.amina.bio"),
+      image: "/members/amina.jpg?height=400&width=300",
       social: {
         github: "#",
         linkedin: "#",
@@ -77,9 +77,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.thomas.name"),
-      role: t("team.members.thomas.role"),
-      bio: t("team.members.thomas.bio"),
+      name: t("team.members.elvis.name"),
+      role: t("team.members.elvis.role"),
+      bio: t("team.members.elvis.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -88,9 +88,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.olivia.name"),
-      role: t("team.members.olivia.role"),
-      bio: t("team.members.olivia.bio"),
+      name: t("team.members.faylinn.name"),
+      role: t("team.members.faylinn.role"),
+      bio: t("team.members.faylinn.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -99,9 +99,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.james.name"),
-      role: t("team.members.james.role"),
-      bio: t("team.members.james.bio"),
+      name: t("team.members.aliza.name"),
+      role: t("team.members.aliza.role"),
+      bio: t("team.members.aliza.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -110,9 +110,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.sophia.name"),
-      role: t("team.members.sophia.role"),
-      bio: t("team.members.sophia.bio"),
+      name: t("team.members.danny.name"),
+      role: t("team.members.danny.role"),
+      bio: t("team.members.danny.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -121,9 +121,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.michael.name"),
-      role: t("team.members.michael.role"),
-      bio: t("team.members.michael.bio"),
+      name: t("team.members.didier.name"),
+      role: t("team.members.didier.role"),
+      bio: t("team.members.didier.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",

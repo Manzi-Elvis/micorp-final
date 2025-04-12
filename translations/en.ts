@@ -295,6 +295,7 @@ export const en = {
       position: "Founder & CEO",
       bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
       portfolio: "Portfolio",
+      linkedin: "LinkedIn",
     },
   },
 
@@ -314,55 +315,55 @@ export const en = {
         role: "Founder & CEO",
         bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
       },
-      sarah: {
-        name: "Sarah Chen",
-        role: "Chief Technology Officer",
+      pazzo: {
+        name: "Igiraneza Patrick",
+        role: "Frontend Developer",
         bio: "With over 15 years of experience in software architecture and development, Sarah leads our technical strategy and ensures we stay at the cutting edge of technology.",
       },
-      marcus: {
-        name: "Marcus Johnson",
+      paccy: {
+        name: "Kimana Pacifique",
         role: "Lead UX/UI Designer",
         bio: "Marcus combines artistic talent with user-centered design principles to create intuitive and beautiful interfaces that delight users.",
       },
-      aisha: {
-        name: "Aisha Patel",
-        role: "Senior Full-Stack Developer",
+      queen: {
+        name: "Umwamikazi Honorata",
+        role: "Senior Videographer",
         bio: "A problem-solver at heart, Aisha brings extensive experience in both frontend and backend development to create seamless, high-performance applications.",
       },
-      david: {
-        name: "David Kim",
+      josh: {
+        name: "Ijabo Joshua",
         role: "Data Science Lead",
         bio: "David specializes in turning complex data into actionable insights, helping our clients make informed decisions based on solid analytics.",
       },
-      elena: {
-        name: "Elena Rodriguez",
-        role: "Project Manager",
+      amina: {
+        name: "Anna Anaise",
+        role: "Senior Fullstack Developer",
         bio: "With a keen eye for detail and excellent communication skills, Elena ensures our projects are delivered on time, within scope, and to the highest standards.",
       },
-      thomas: {
-        name: "Thomas Nguyen",
-        role: "DevOps Engineer",
+      elvis: {
+        name: "Manzi Rurangirwa Elvis",
+        role: "Backend Developer",
         bio: "Thomas specializes in automating and optimizing our development and deployment processes, ensuring smooth operations and scalability.",
       },
-      olivia: {
-        name: "Olivia Wilson",
+      faylinn: {
+        name: "Ishimwe Faylinn",
         role: "Mobile Development Specialist",
         bio: "Olivia is passionate about creating exceptional mobile experiences across platforms, with expertise in both iOS and Android development.",
       },
-      james: {
-        name: "James Taylor",
+      aliza: {
+        name: "Iganza Aliza",
         role: "Cybersecurity Expert",
         bio: "James ensures our solutions are secure by design, implementing robust security measures and staying ahead of potential threats.",
       },
-      sophia: {
-        name: "Sophia Martinez",
-        role: "Client Success Manager",
+      danny: {
+        name: "Ngabonziza Danny",
+        role: "Marketing specialist",
         bio: "Sophia works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
       },
-      michael: {
-        name: "Michael Lee",
-        role: "AI Research Specialist",
-        bio: "Michael explores cutting-edge AI technologies to develop innovative solutions that push the boundaries of what's possible.",
+      didier: {
+        name: "Manirakiza Didier",
+        role: "Lead Data Scientist",
+        bio: "Sophia works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
       },
     },
     joinUs: {

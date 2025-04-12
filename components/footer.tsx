@@ -29,7 +29,7 @@ export default function Footer() {
             <p className="text-muted-foreground">{t("footer.tagline")}</p>
             <div className="flex gap-4">
               <a
-                href="https://github.com/Djsensei1/"
+                href="https://github.com/mi-corp/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -37,7 +37,7 @@ export default function Footer() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/chaste_djaziri/"
+                href="https://instagram.com/mirror_corporation/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -130,11 +130,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-blue-600" />
-                <span className="text-muted-foreground">+250 123 456 789</span>
+                <span className="text-muted-foreground">+250 794 578 640</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-blue-600" />
-                <span className="text-muted-foreground">info@micorp.pro</span>
+                <span className="text-muted-foreground">contact@micorp.pro</span>
               </li>
             </ul>
           </div>
