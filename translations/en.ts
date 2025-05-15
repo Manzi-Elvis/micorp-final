@@ -117,7 +117,7 @@ export const en = {
     title: "What Our Clients Say",
     subtitle: "Don't just take our word for it - hear from some of our satisfied clients.",
     quote1:
-      "Mirror Corporation transformed our healthcare platform, delivering a solution that exceeded our expectations. Their technical expertise and understanding of our industry made all the difference.",
+      "Mirror Corporation transformed my life, delivering a solution that exceeded our expectations. Their technical expertise and understanding of our industry made all the difference.",
     quote2:
       "Working with the team at Micorp was a game-changer for our business. They not only delivered a robust solution but also provided valuable insights that helped us improve our operations.",
     quote3:

@@ -99,22 +99,23 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+            // className="relative h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-2xl"
+            className="relative h-[400px] lg:h-[500px]"
           >
             <Image
-              src="/placeholder.svg?height=1000&width=1000"
+              src="/brand/heroo3.png"
               alt="Mirror Corporation"
               fill
               className="object-cover"
             />
             <motion.div
-              className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
+              // className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
               <div className="p-6">
-                <motion.h3
+                {/* <motion.h3
                   className="text-white text-xl font-bold"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -129,7 +130,7 @@ export default function Hero() {
                   transition={{ duration: 0.5, delay: 1.4 }}
                 >
                   {t("hero.deliveringExcellence")}
-                </motion.p>
+                </motion.p> */}
               </div>
             </motion.div>
           </motion.div>

@@ -17,8 +17,8 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote: t("testimonials.quote1"),
-      author: "Sarah Johnson",
-      position: "CTO, HealthTech Innovations",
+      author: "Chanella Djamilla",
+      position: "Pan African Dancer",
       image: "/placeholder.svg?height=200&width=200",
     },
     {

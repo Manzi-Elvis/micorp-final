@@ -31,7 +31,7 @@ export default function Features() {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
         >
-          <Image src="/placeholder.svg?height=800&width=600" alt="Features" fill className="object-cover" />
+          <Image src="/brand/hero4.jpg" alt="Features" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/5"></div>
         </div>
 
