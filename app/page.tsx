@@ -7,7 +7,7 @@ import CTA from "@/components/cta"
 import InteractiveTechSection from "@/components/interactive-tech-section"
 
 export const metadata: Metadata = {
-  title: "Reflecting Excellence in Technology Solutions",
+  title: "Mirror Corporation – Technology with Clarity",
   description:
     "Mirror Corporation (Micorp) - Where innovation meets integrity. We deliver top-tier technology solutions that inspire and empower across industries.",
 }

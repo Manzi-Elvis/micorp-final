@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: {
     template: "%s | Micorp - Mirror Corporation",
-    default: "Micorp - Reflecting Excellence in Technology Solutions",
+    default: "Mirror Corporation – Technology with Clarity",
   },
   description:
     "Mirror Corporation (Micorp) - Where innovation meets integrity. We deliver top-tier technology solutions that inspire and empower across industries.",
