@@ -15,7 +15,7 @@ export default function CTA() {
         <p className="text-xl text-blue-100 max-w-2xl mx-auto">{t("cta.subtitle")}</p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Button size="lg" variant="secondary" asChild>
-            <Link href="/contact">{t("cta.contactUs")}</Link>
+            <Link href="/request-job">{t("cta.contactUs")}</Link>
           </Button>
           <Button
             size="lg"

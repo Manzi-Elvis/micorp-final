@@ -1,15 +1,78 @@
 "use client"
 
+import type React from "react"
+
+import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
+import { MapPin, Phone, Mail, Clock, CheckCircle } from 'lucide-react'
 import { useTranslations } from "@/hooks/use-translations"
+import { supabase } from "@/lib/supabase"
+import { toast } from "sonner"
 
 export default function ContactPage() {
   const { t } = useTranslations()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setShowSuccess(false)
+
+    try {
+      const { error } = await supabase.from("contact_submissions").insert([formData])
+
+      if (error) throw error
+
+      // Send notification email to admin
+      try {
+        await fetch("/api/send-contact-notification", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        })
+      } catch (emailError) {
+        console.error("Failed to send notification email:", emailError)
+        // Don't fail the whole process if email fails
+      }
+
+      setShowSuccess(true)
+      toast.success("Message sent successfully! We'll get back to you soon.")
+
+      // Reset form
+      setFormData({
+        first_name: "",
+        last_name: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+
+      // Hide success message after 5 seconds
+      setTimeout(() => setShowSuccess(false), 5000)
+    } catch (error) {
+      console.error("Error submitting contact form:", error)
+      toast.error("Failed to send message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
@@ -25,36 +88,77 @@ export default function ContactPage() {
             <CardDescription>{t("contact.form.description")}</CardDescription>
           </CardHeader>
           <CardContent>
-            <form className="space-y-6">
+            {showSuccess && (
+              <Alert className="mb-6 border-green-200 bg-green-50">
+                <CheckCircle className="h-4 w-4 text-green-600" />
+                <AlertDescription className="text-green-800">
+                  <strong>Message sent successfully!</strong> We've received your message and will get back to you within 24-48 hours.
+                </AlertDescription>
+              </Alert>
+            )}
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="first-name">{t("contact.form.firstName")}</Label>
-                  <Input id="first-name" placeholder={t("contact.form.firstNamePlaceholder")} required />
+                  <Input
+                    id="first-name"
+                    value={formData.first_name}
+                    onChange={(e) => handleInputChange("first_name", e.target.value)}
+                    placeholder={t("contact.form.firstNamePlaceholder")}
+                    required
+                    disabled={isSubmitting}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="last-name">{t("contact.form.lastName")}</Label>
-                  <Input id="last-name" placeholder={t("contact.form.lastNamePlaceholder")} required />
+                  <Input
+                    id="last-name"
+                    value={formData.last_name}
+                    onChange={(e) => handleInputChange("last_name", e.target.value)}
+                    placeholder={t("contact.form.lastNamePlaceholder")}
+                    required
+                    disabled={isSubmitting}
+                  />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">{t("contact.form.email")}</Label>
-                <Input id="email" type="email" placeholder={t("contact.form.emailPlaceholder")} required />
+                <Input
+                  id="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) => handleInputChange("email", e.target.value)}
+                  placeholder={t("contact.form.emailPlaceholder")}
+                  required
+                  disabled={isSubmitting}
+                />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="subject">{t("contact.form.subject")}</Label>
-                <Input id="subject" placeholder={t("contact.form.subjectPlaceholder")} required />
+                <Input
+                  id="subject"
+                  value={formData.subject}
+                  onChange={(e) => handleInputChange("subject", e.target.value)}
+                  placeholder={t("contact.form.subjectPlaceholder")}
+                  required
+                  disabled={isSubmitting}
+                />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">{t("contact.form.message")}</Label>
                 <Textarea
                   id="message"
+                  value={formData.message}
+                  onChange={(e) => handleInputChange("message", e.target.value)}
                   placeholder={t("contact.form.messagePlaceholder")}
                   className="min-h-[150px]"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
-              <Button type="submit" className="w-full">
-                {t("contact.form.submit")}
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : t("contact.form.submit")}
               </Button>
             </form>
           </CardContent>
@@ -188,4 +292,3 @@ export default function ContactPage() {
     </div>
   )
 }
-

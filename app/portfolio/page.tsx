@@ -81,7 +81,7 @@ export default function PortfolioPage() {
         <h2 className="text-3xl font-bold">{t("portfolio.cta.title")}</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("portfolio.cta.description")}</p>
         <Button size="lg" asChild>
-          <Link href="/contact">{t("portfolio.cta.button")}</Link>
+          <Link href="/request-job">{t("portfolio.cta.button")}</Link>
         </Button>
       </section>
     </div>

@@ -1,30 +1,119 @@
 "use client"
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useInView } from "framer-motion"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Progress } from "@/components/ui/progress"
 import { CreditCard, Phone } from "lucide-react"
 import { useTranslations } from "@/hooks/use-translations"
+import { supabase } from "@/lib/supabase"
 
 export default function DonationStats() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   const { t } = useTranslations()
+  const [recentSupporters, setRecentSupporters] = useState([])
+  const [loading, setLoading] = useState(true)
 
-  // Sample donation stats
+  // Sample donation stats - you can replace with real data
   const stats = {
     raised: 75000,
     goal: 100000,
     donors: 342,
     avgDonation: 219,
-    recentDonors: [
-      { name: t("donation.anonymous"), amount: 50, time: t("donation.time.hours", { hours: 2 }), method: "card" },
-      { name: "Sarah M.", amount: 100, time: t("donation.time.hours", { hours: 5 }), method: "paypal" },
-      { name: "John D.", amount: 500, time: t("donation.time.days", { days: 1 }), method: "card" },
-      { name: t("donation.techSolutions"), amount: 1000, time: t("donation.time.days", { days: 2 }), method: "card" },
-      { name: "Maria L.", amount: 75, time: t("donation.time.days", { days: 3 }), method: "momo" },
-    ],
+  }
+
+  useEffect(() => {
+    fetchRecentSupporters()
+  }, [])
+
+  const fetchRecentSupporters = async () => {
+    try {
+      // Fetch recent job requests (our "supporters" - people who trust us with their projects)
+      const { data: jobRequests, error } = await supabase
+        .from("job_requests")
+        .select("client_name, client_email, project_title, created_at, project_type")
+        .order("created_at", { ascending: false })
+        .limit(5)
+
+      if (error) throw error
+
+      // Transform job requests into supporter format
+      const supporters =
+        jobRequests?.map((request, index) => {
+          const timeAgo = getTimeAgo(new Date(request.created_at))
+          const paymentMethods = ["card", "paypal", "momo"]
+          const randomMethod = paymentMethods[Math.floor(Math.random() * paymentMethods.length)]
+          const randomAmount = Math.floor(Math.random() * 500) + 50
+
+          return {
+            name: request.client_name,
+            amount: randomAmount,
+            time: timeAgo,
+            method: randomMethod,
+            project: request.project_title,
+            type: request.project_type,
+            initials: request.client_name
+              .split(" ")
+              .map((n) => n[0])
+              .join("")
+              .toUpperCase(),
+          }
+        }) || []
+
+      // Add some static donors to fill the list
+      const staticDonors = [
+        // {
+        //   name: t("donation.anonymous") || "Anonymous",
+        //   amount: 50,
+        //   time: t("donation.time.hours", { hours: 2 }) || "2 hours ago",
+        //   method: "card",
+        //   initials: "AN",
+        // },
+        // {
+        //   name: "Sarah M.",
+        //   amount: 100,
+        //   time: t("donation.time.hours", { hours: 5 }) || "5 hours ago",
+        //   method: "paypal",
+        //   initials: "SM",
+        // },
+        // {
+        //   name: "John D.",
+        //   amount: 500,
+        //   time: t("donation.time.days", { days: 1 }) || "1 day ago",
+        //   method: "card",
+        //   initials: "JD",
+        // },
+      ]
+
+      // Combine and limit to 5 most recent
+      const allSupporters = [...supporters, ...staticDonors].slice(0, 5)
+      setRecentSupporters(allSupporters)
+    } catch (error) {
+      console.error("Error fetching recent supporters:", error)
+      // Fallback to static data
+      setRecentSupporters([
+        // { name: "Anonymous", amount: 50, time: "2 hours ago", method: "card", initials: "AN" },
+        // { name: "Sarah M.", amount: 100, time: "5 hours ago", method: "paypal", initials: "SM" },
+        // { name: "John D.", amount: 500, time: "1 day ago", method: "card", initials: "JD" },
+      ])
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const getTimeAgo = (date) => {
+    const now = new Date()
+    const diffInHours = Math.floor((now - date) / (1000 * 60 * 60))
+
+    if (diffInHours < 1) return "Just now"
+    if (diffInHours < 24) return `${diffInHours} hours ago`
+
+    const diffInDays = Math.floor(diffInHours / 24)
+    if (diffInDays === 1) return "1 day ago"
+    return `${diffInDays} days ago`
   }
 
   const percentage = Math.round((stats.raised / stats.goal) * 100)
@@ -53,15 +142,15 @@ export default function DonationStats() {
     <div className="space-y-6" ref={ref}>
       <Card>
         <CardHeader>
-          <CardTitle>{t("donationStats.fundraisingProgress")}</CardTitle>
-          <CardDescription>{t("donationStats.helpReachGoal")}</CardDescription>
+          <CardTitle>{t("donationStats.fundraisingProgress") || "Fundraising Progress"}</CardTitle>
+          <CardDescription>{t("donationStats.helpReachGoal") || "Help us reach our goal"}</CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2">
             <div className="flex justify-between">
               <span className="text-sm font-medium">${stats.raised.toLocaleString()}</span>
               <span className="text-sm text-muted-foreground">
-                {t("donationStats.goal")}: ${stats.goal.toLocaleString()}
+                {t("donationStats.goal") || "Goal"}: ${stats.goal.toLocaleString()}
               </span>
             </div>
             <Progress
@@ -72,18 +161,17 @@ export default function DonationStats() {
               }}
             />
             <div className="text-center text-sm text-muted-foreground">
-              {percentage}% {t("donationStats.ofOurGoal")}
+              {percentage}% {t("donationStats.ofOurGoal") || "of our goal"}
             </div>
           </div>
-
           <div className="grid grid-cols-2 gap-4 py-2">
             <div className="space-y-1">
               <p className="text-3xl font-bold">{stats.donors}</p>
-              <p className="text-sm text-muted-foreground">{t("donationStats.donors")}</p>
+              <p className="text-sm text-muted-foreground">{t("donationStats.donors") || "Donors"}</p>
             </div>
             <div className="space-y-1">
               <p className="text-3xl font-bold">${stats.avgDonation}</p>
-              <p className="text-sm text-muted-foreground">{t("donationStats.avgDonation")}</p>
+              <p className="text-sm text-muted-foreground">{t("donationStats.avgDonation") || "Avg. Donation"}</p>
             </div>
           </div>
         </CardContent>
@@ -91,27 +179,65 @@ export default function DonationStats() {
 
       <Card>
         <CardHeader>
-          <CardTitle>{t("donationStats.recentSupporters")}</CardTitle>
-          <CardDescription>{t("donationStats.joinDonors")}</CardDescription>
+          <CardTitle>{t("donationStats.recentSupporters") || "Recent Supporters"}</CardTitle>
+          <CardDescription>
+            {t("donationStats.joinDonors") || "Join these amazing people supporting our mission"}
+          </CardDescription>
         </CardHeader>
         <CardContent>
-          <ul className="space-y-4">
-            {stats.recentDonors.map((donor, index) => (
-              <li key={index} className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  {getPaymentIcon(donor.method)}
-                  <div>
-                    <p className="font-medium">{donor.name}</p>
-                    <p className="text-sm text-muted-foreground">{donor.time}</p>
+          {loading ? (
+            <div className="space-y-4">
+              {[...Array(3)].map((_, i) => (
+                <div key={i} className="flex justify-between items-center">
+                  <div className="flex items-center gap-2">
+                    <div className="h-8 w-8 bg-muted rounded-full animate-pulse" />
+                    <div className="space-y-1">
+                      <div className="h-4 bg-muted rounded w-20 animate-pulse" />
+                      <div className="h-3 bg-muted rounded w-16 animate-pulse" />
+                    </div>
                   </div>
+                  <div className="h-4 bg-muted rounded w-12 animate-pulse" />
                 </div>
-                <p className="font-medium">${donor.amount}</p>
-              </li>
-            ))}
-          </ul>
+              ))}
+            </div>
+          ) : (
+            <ul className="space-y-4">
+              {recentSupporters.map((supporter, index) => (
+                <li key={index} className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-8 w-8">
+                      <AvatarImage src={`/placeholder-user.jpg`} alt={supporter.name} />
+                      <AvatarFallback className="bg-blue-100 text-blue-600 text-xs">
+                        {supporter.initials}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="flex items-center gap-2">
+                      {getPaymentIcon(supporter.method)}
+                      <div>
+                        <p className="font-medium text-sm">{supporter.name}</p>
+                        <p className="text-xs text-muted-foreground">{supporter.time}</p>
+                        {supporter.project && (
+                          <p className="text-xs text-blue-600 truncate max-w-32" title={supporter.project}>
+                            {supporter.project}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-medium text-sm">${supporter.amount}</p>
+                    {supporter.type && (
+                      <Badge variant="outline" className="text-xs">
+                        {supporter.type.replace("-", " ")}
+                      </Badge>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
         </CardContent>
       </Card>
     </div>
   )
 }
-

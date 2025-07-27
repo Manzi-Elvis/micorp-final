@@ -1,4 +1,3 @@
-// app/components/DonationForm.tsx
 "use client"
 
 import { useState, useEffect, useRef } from "react"
@@ -18,7 +17,6 @@ export default function DonationForm() {
     const container = document.getElementById("donate-button")
     if (paymentMethod === "paypal" && container) {
       container.innerHTML = ""
-
       const renderButton = () => {
         // @ts-ignore
         if (window.PayPal) {
@@ -30,6 +28,11 @@ export default function DonationForm() {
               src: "https://pics.paypal.com/00/s/MjhhMDFjNjgtZjFmOS00MDZjLTg2OTEtYWJkNDE4ZTIwMjEw/file.PNG",
               alt: "Donate with PayPal button",
               title: "PayPal - The safer, easier way to pay online!",
+            },
+            onComplete: (params) => {
+              // Handle successful donation
+              setIsSuccess(true)
+              console.log("Donation completed:", params)
             },
           }).render("#donate-button")
         }
@@ -77,12 +80,12 @@ export default function DonationForm() {
                 <span className="mx-2 text-muted-foreground text-sm">{t("donation.paymentMethod")}</span>
                 <div className="h-px flex-1 bg-muted" />
               </div>
-
               <Tabs value={paymentMethod} onValueChange={setPaymentMethod} className="w-full">
                 <TabsList className="grid grid-cols-3 w-full">
                   <TabsTrigger value="stripe" disabled className="flex items-center gap-2">
                     <CreditCardIcon className="h-4 w-4" />
-                    Stripe <span className="text-xs text-muted-foreground">(Not yet available)</span>
+                    <span className="hidden sm:inline">Stripe</span>
+                    <span className="text-xs text-muted-foreground">(Soon)</span>
                   </TabsTrigger>
                   <TabsTrigger value="paypal" className="flex items-center gap-2">
                     <svg viewBox="0 0 24 24" className="h-4 w-4 text-blue-600">
@@ -95,21 +98,19 @@ export default function DonationForm() {
                   </TabsTrigger>
                   <TabsTrigger value="momo" disabled className="flex items-center gap-2">
                     <Phone className="h-4 w-4" />
-                    MTN <span className="text-xs text-muted-foreground">(Not yet available)</span>
+                    <span className="hidden sm:inline">MTN</span>
+                    <span className="text-xs text-muted-foreground">(Soon)</span>
                   </TabsTrigger>
                 </TabsList>
-
                 <TabsContent value="paypal" className="text-center pt-6">
                   <p className="text-muted-foreground text-sm mb-4">{t("donation.donateWithPayPal")}</p>
                   <div id="donate-button-container">
                     <div id="donate-button" className="flex justify-center" />
                   </div>
                 </TabsContent>
-
                 <TabsContent value="stripe" className="pt-4 text-center text-muted-foreground text-sm">
                   {t("donation.stripeUnavailable")}
                 </TabsContent>
-
                 <TabsContent value="momo" className="pt-4 text-center text-muted-foreground text-sm">
                   {t("donation.momoUnavailable")}
                 </TabsContent>

@@ -253,6 +253,7 @@ export const en = {
     description: "It seems you've lost your internet connection. Please check your network and try again.",
     retryConnection: "Retry Connection",
     persistProblem: "If the problem persists, please try again later or contact our support team.",
+    stillOffline: "You're still offline. Please check your connection and try again.",
   },
 
   // About page translations
@@ -292,7 +293,7 @@ export const en = {
     founder: {
       title: "Meet Our Founder",
       name: "Chaste Djaziri",
-      position: "Founder & CEO",
+      position: "Founder",
       bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
       portfolio: "Portfolio",
       linkedin: "LinkedIn",
@@ -312,7 +313,12 @@ export const en = {
     members: {
       chaste: {
         name: "Chaste Djaziri",
-        role: "Founder & CEO",
+        role: "Founder",
+        bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
+      },
+      thierry: {
+        name: "Ndayishimiye Thierry",
+        role: "Marketing Specialist",
         bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
       },
       pazzo: {
@@ -445,54 +451,54 @@ export const en = {
     title: "Our Blog",
     subtitle: "Insights, trends, and thought leadership in technology, software development, and digital innovation.",
     posts: {
-      ai: {
-        title: "The Future of AI in Software Development",
-        excerpt:
-          "Explore how artificial intelligence is transforming the software development process and what it means for businesses and developers.",
-        date: "April 2, 2025",
-        author: "Chaste Djaziri",
-        category: "Artificial Intelligence",
-      },
-      nextjs: {
-        title: "Building Scalable Web Applications with Next.js",
-        excerpt:
-          "Learn how to leverage Next.js to create high-performance, scalable web applications that can handle growing user bases.",
-        date: "March 28, 2025",
-        author: "Sarah Chen",
-        category: "Web Development",
-      },
-      cybersecurity: {
-        title: "Cybersecurity Best Practices for Small Businesses",
-        excerpt:
-          "Discover essential cybersecurity measures that small businesses can implement to protect their digital assets and customer data.",
-        date: "March 20, 2025",
-        author: "James Taylor",
-        category: "Cybersecurity",
-      },
-      pwa: {
-        title: "The Rise of Progressive Web Apps",
-        excerpt:
-          "Explore how PWAs are changing the mobile landscape and why businesses should consider them for their digital strategy.",
-        date: "March 15, 2025",
-        author: "Olivia Wilson",
-        category: "Mobile Development",
-      },
-      dataDecisions: {
-        title: "Data-Driven Decision Making: A Practical Guide",
-        excerpt:
-          "Learn how to leverage data analytics to make informed business decisions and drive growth in your organization.",
-        date: "March 10, 2025",
-        author: "David Kim",
-        category: "Data Analytics",
-      },
-      ux: {
-        title: "The Importance of User Experience in Software Design",
-        excerpt:
-          "Discover why user experience should be at the forefront of your software design process and how it impacts business success.",
-        date: "March 5, 2025",
-        author: "Marcus Johnson",
-        category: "UX/UI Design",
-      },
+      // ai: {
+      //   title: "The Future of AI in Software Development",
+      //   excerpt:
+      //     "Explore how artificial intelligence is transforming the software development process and what it means for businesses and developers.",
+      //   date: "April 2, 2025",
+      //   author: "Chaste Djaziri",
+      //   category: "Artificial Intelligence",
+      // },
+      // nextjs: {
+      //   title: "Building Scalable Web Applications with Next.js",
+      //   excerpt:
+      //     "Learn how to leverage Next.js to create high-performance, scalable web applications that can handle growing user bases.",
+      //   date: "March 28, 2025",
+      //   author: "Sarah Chen",
+      //   category: "Web Development",
+      // },
+      // cybersecurity: {
+      //   title: "Cybersecurity Best Practices for Small Businesses",
+      //   excerpt:
+      //     "Discover essential cybersecurity measures that small businesses can implement to protect their digital assets and customer data.",
+      //   date: "March 20, 2025",
+      //   author: "James Taylor",
+      //   category: "Cybersecurity",
+      // },
+      // pwa: {
+      //   title: "The Rise of Progressive Web Apps",
+      //   excerpt:
+      //     "Explore how PWAs are changing the mobile landscape and why businesses should consider them for their digital strategy.",
+      //   date: "March 15, 2025",
+      //   author: "Olivia Wilson",
+      //   category: "Mobile Development",
+      // },
+      // dataDecisions: {
+      //   title: "Data-Driven Decision Making: A Practical Guide",
+      //   excerpt:
+      //     "Learn how to leverage data analytics to make informed business decisions and drive growth in your organization.",
+      //   date: "March 10, 2025",
+      //   author: "David Kim",
+      //   category: "Data Analytics",
+      // },
+      // ux: {
+      //   title: "The Importance of User Experience in Software Design",
+      //   excerpt:
+      //     "Discover why user experience should be at the forefront of your software design process and how it impacts business success.",
+      //   date: "March 5, 2025",
+      //   author: "Marcus Johnson",
+      //   category: "UX/UI Design",
+      // },
     },
     newsletter: {
       title: "Subscribe to Our Newsletter",
@@ -555,9 +561,143 @@ export const en = {
     },
   },
 
-  // Offline page additional translations
-  offline: {
-    stillOffline: "You're still offline. Please check your connection and try again.",
+  // Request Job page translations
+  requestJob: {
+    title: "Request a Job",
+    subtitle: "Tell us about your project and we'll get back to you with a proposal",
+    projectDetails: "Project Details",
+    projectDetailsDescription: "Please provide as much detail as possible about your project requirements",
+    clientInformation: "Client Information",
+    fullName: "Full Name *",
+    fullNamePlaceholder: "Your full name",
+    emailAddress: "Email Address *",
+    emailAddressPlaceholder: "your.email@example.com",
+    phoneNumber: "Phone Number",
+    phoneNumberPlaceholder: "+1 (555) 123-4567",
+    companyName: "Company Name",
+    companyNamePlaceholder: "Your company name (optional)",
+    projectInformation: "Project Information",
+    projectTitle: "Project Title *",
+    projectTitlePlaceholder: "Brief title for your project",
+    projectType: "Project Type *",
+    projectTypePlaceholder: "Select project type",
+    projectDescription: "Project Description *",
+    projectDescriptionPlaceholder: "Describe your project in detail. What do you want to build? What features do you need?",
+    specificRequirements: "Specific Requirements",
+    specificRequirementsPlaceholder: "Any specific technologies, integrations, or requirements you have in mind?",
+    budgetTimeline: "Budget & Timeline",
+    budgetRange: "Budget Range",
+    budgetRangePlaceholder: "Select budget range",
+    expectedTimeline: "Expected Timeline",
+    expectedTimelinePlaceholder: "Select timeline",
+    submitJobRequest: "Submit Job Request",
+    submitting: "Submitting...",
+    projectTypes: {
+      webDevelopment: "Web Development",
+      mobileApp: "Mobile App",
+      desktopApp: "Desktop Application",
+      uiUxDesign: "UI/UX Design",
+      ecommerce: "E-commerce",
+      cms: "Content Management System",
+      apiDevelopment: "API Development",
+      maintenance: "Website Maintenance",
+      other: "Other",
+    },
+    budgetRanges: {
+      under1k: "Under $1,000",
+      "1k-5k": "$1,000 - $5,000",
+      "5k-10k": "$5,000 - $10,000",
+      "10k-25k": "$10,000 - $25,000",
+      "25k-50k": "$25,000 - $50,000",
+      "50k-plus": "$50,000+",
+      discuss: "Let's discuss",
+    },
+    timelines: {
+      asap: "ASAP",
+      "1-2-weeks": "1-2 weeks",
+      "1-month": "1 month",
+      "2-3-months": "2-3 months",
+      "3-6-months": "3-6 months",
+      "6-months-plus": "6+ months",
+      flexible: "Flexible",
+    },
+  },
+
+  // Admin page translations
+  admin: {
+    login: "Admin Login",
+    loginDescription: "Enter the admin password to access the dashboard",
+    password: "Password",
+    passwordPlaceholder: "Enter admin password",
+    loginButton: "Login",
+    dashboard: "Admin Dashboard",
+    logout: "Logout",
+    refresh: "Refresh",
+    refreshing: "Refreshing...",
+    composeEmail: "Compose Email",
+    customizeQR: "Customize QR",
+    qrCode: "QR Code",
+    jobRequests: "Job Requests",
+    contactMessages: "Contact Messages",
+    emailDialog: {
+      title: "Compose Email",
+      description: "Send a custom email to clients or contacts",
+      to: "To",
+      toPlaceholder: "recipient@example.com",
+      subject: "Subject",
+      subjectPlaceholder: "Email subject",
+      message: "Message",
+      htmlMode: "HTML Mode",
+      htmlPlaceholder: "Enter HTML content...",
+      textPlaceholder: "Enter your message...",
+      cancel: "Cancel",
+      sendEmail: "Send Email",
+      sending: "Sending...",
+    },
+    qrDialog: {
+      title: "Customize QR Code",
+      description: "Customize your job request QR code",
+      qrColor: "QR Color",
+      bgColor: "Background Color",
+      size: "Size: {{size}}px",
+      includeLogo: "Include Company Logo",
+      applyChanges: "Apply Changes",
+    },
+    qrDisplay: {
+      title: "Job Request QR Code",
+      description: "Share this QR code to direct people to the job request page",
+      scanToVisit: "Scan to visit: {{url}}",
+      downloadQR: "Download QR Code",
+    },
+    status: {
+      pending: "Pending",
+      accepted: "Accepted",
+      negotiating: "Negotiating",
+      declined: "Declined",
+      unread: "Unread",
+      read: "Read",
+      replied: "Replied",
+    },
+    quickActions: {
+      acceptAndEmail: "Accept & Email",
+      requestInfo: "Request Info",
+      declineAndEmail: "Decline & Email",
+      reply: "Reply",
+    },
+    emailTemplates: {
+      jobAccepted: {
+        subject: "Job Request Accepted - {{projectTitle}}",
+        message: "Hi {{clientName}},\n\nGreat news! We've reviewed your job request for \"{{projectTitle}}\" and we'd love to work with you on this project.\n\nOur team will be in touch within the next 24 hours to discuss the next steps, timeline, and provide you with a detailed proposal.\n\nThank you for choosing Micorp for your project needs.\n\nBest regards,\nThe Micorp Team",
+      },
+      jobDeclined: {
+        subject: "Job Request Update - {{projectTitle}}",
+        message: "Hi {{clientName}},\n\nThank you for your interest in working with Micorp on \"{{projectTitle}}\".\n\nAfter careful consideration, we've determined that this project isn't the best fit for our current capabilities and focus areas.\n\nWe appreciate you thinking of us and wish you the best of luck with your project.\n\nBest regards,\nThe Micorp Team",
+      },
+      needMoreInfo: {
+        subject: "Additional Information Needed - {{projectTitle}}",
+        message: "Hi {{clientName}},\n\nThank you for your job request for \"{{projectTitle}}\". We're very interested in working with you on this project.\n\nTo provide you with the most accurate proposal, we need some additional information:\n\n- [Add specific questions here]\n- [Add more questions as needed]\n\nOnce we have these details, we'll be able to provide you with a comprehensive proposal.\n\nLooking forward to hearing from you!\n\nBest regards,\nThe Micorp Team",
+      },
+    },
   },
 }
 

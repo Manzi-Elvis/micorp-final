@@ -1,3 +1,5 @@
+// app/blog/page.tsx
+
 "use client"
 
 import Image from "next/image"
@@ -10,60 +12,60 @@ export default function BlogPage() {
   const { t } = useTranslations()
 
   const blogPosts = [
-    {
-      title: t("blog.posts.ai.title"),
-      excerpt: t("blog.posts.ai.excerpt"),
-      date: t("blog.posts.ai.date"),
-      author: t("blog.posts.ai.author"),
-      category: t("blog.posts.ai.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "future-of-ai-in-software-development",
-    },
-    {
-      title: t("blog.posts.nextjs.title"),
-      excerpt: t("blog.posts.nextjs.excerpt"),
-      date: t("blog.posts.nextjs.date"),
-      author: t("blog.posts.nextjs.author"),
-      category: t("blog.posts.nextjs.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "building-scalable-web-applications-with-nextjs",
-    },
-    {
-      title: t("blog.posts.cybersecurity.title"),
-      excerpt: t("blog.posts.cybersecurity.excerpt"),
-      date: t("blog.posts.cybersecurity.date"),
-      author: t("blog.posts.cybersecurity.author"),
-      category: t("blog.posts.cybersecurity.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "cybersecurity-best-practices-for-small-businesses",
-    },
-    {
-      title: t("blog.posts.pwa.title"),
-      excerpt: t("blog.posts.pwa.excerpt"),
-      date: t("blog.posts.pwa.date"),
-      author: t("blog.posts.pwa.author"),
-      category: t("blog.posts.pwa.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "rise-of-progressive-web-apps",
-    },
-    {
-      title: t("blog.posts.dataDecisions.title"),
-      excerpt: t("blog.posts.dataDecisions.excerpt"),
-      date: t("blog.posts.dataDecisions.date"),
-      author: t("blog.posts.dataDecisions.author"),
-      category: t("blog.posts.dataDecisions.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "data-driven-decision-making-practical-guide",
-    },
-    {
-      title: t("blog.posts.ux.title"),
-      excerpt: t("blog.posts.ux.excerpt"),
-      date: t("blog.posts.ux.date"),
-      author: t("blog.posts.ux.author"),
-      category: t("blog.posts.ux.category"),
-      image: "/placeholder.svg?height=600&width=800",
-      slug: "importance-of-user-experience-in-software-design",
-    },
+    // {
+    //   title: t("blog.posts.ai.title"),
+    //   excerpt: t("blog.posts.ai.excerpt"),
+    //   date: t("blog.posts.ai.date"),
+    //   author: t("blog.posts.ai.author"),
+    //   category: t("blog.posts.ai.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "future-of-ai-in-software-development",
+    // },
+    // {
+    //   title: t("blog.posts.nextjs.title"),
+    //   excerpt: t("blog.posts.nextjs.excerpt"),
+    //   date: t("blog.posts.nextjs.date"),
+    //   author: t("blog.posts.nextjs.author"),
+    //   category: t("blog.posts.nextjs.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "building-scalable-web-applications-with-nextjs",
+    // },
+    // {
+    //   title: t("blog.posts.cybersecurity.title"),
+    //   excerpt: t("blog.posts.cybersecurity.excerpt"),
+    //   date: t("blog.posts.cybersecurity.date"),
+    //   author: t("blog.posts.cybersecurity.author"),
+    //   category: t("blog.posts.cybersecurity.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "cybersecurity-best-practices-for-small-businesses",
+    // },
+    // {
+    //   title: t("blog.posts.pwa.title"),
+    //   excerpt: t("blog.posts.pwa.excerpt"),
+    //   date: t("blog.posts.pwa.date"),
+    //   author: t("blog.posts.pwa.author"),
+    //   category: t("blog.posts.pwa.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "rise-of-progressive-web-apps",
+    // },
+    // {
+    //   title: t("blog.posts.dataDecisions.title"),
+    //   excerpt: t("blog.posts.dataDecisions.excerpt"),
+    //   date: t("blog.posts.dataDecisions.date"),
+    //   author: t("blog.posts.dataDecisions.author"),
+    //   category: t("blog.posts.dataDecisions.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "data-driven-decision-making-practical-guide",
+    // },
+    // {
+    //   title: t("blog.posts.ux.title"),
+    //   excerpt: t("blog.posts.ux.excerpt"),
+    //   date: t("blog.posts.ux.date"),
+    //   author: t("blog.posts.ux.author"),
+    //   category: t("blog.posts.ux.category"),
+    //   image: "/placeholder.svg?height=600&width=800",
+    //   slug: "importance-of-user-experience-in-software-design",
+    // },
   ]
 
   return (
@@ -73,35 +75,41 @@ export default function BlogPage() {
         <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("blog.subtitle")}</p>
       </section>
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post, index) => (
-          <Card key={index} className="overflow-hidden group transition-all hover:shadow-md">
-            <Link href={`/blog/${post.slug}`}>
-              <div className="relative h-48">
-                <Image
-                  src={post.image || "/placeholder.svg"}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <CardContent className="p-6 space-y-4">
-                <Badge variant="outline" className="px-2 py-1">
-                  {post.category}
-                </Badge>
-                <div>
-                  <h3 className="text-xl font-bold">{post.title}</h3>
-                  <p className="text-muted-foreground mt-2">{post.excerpt}</p>
+      {blogPosts.length > 0 ? (
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post, index) => (
+            <Card key={index} className="overflow-hidden group transition-all hover:shadow-md">
+              <Link href={`/blog/${post.slug}`}>
+                <div className="relative h-48">
+                  <Image
+                    src={post.image || "/placeholder.svg"}
+                    alt={post.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-                <div className="flex items-center justify-between text-sm text-muted-foreground">
-                  <span>{post.author}</span>
-                  <span>{post.date}</span>
-                </div>
-              </CardContent>
-            </Link>
-          </Card>
-        ))}
-      </section>
+                <CardContent className="p-6 space-y-4">
+                  <Badge variant="outline" className="px-2 py-1">
+                    {post.category}
+                  </Badge>
+                  <div>
+                    <h3 className="text-xl font-bold">{post.title}</h3>
+                    <p className="text-muted-foreground mt-2">{post.excerpt}</p>
+                  </div>
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <span>{post.author}</span>
+                    <span>{post.date}</span>
+                  </div>
+                </CardContent>
+              </Link>
+            </Card>
+          ))}
+        </section>
+      ) : (
+        <div className="text-center py-12">
+          <p className="text-lg text-muted-foreground">No blog posts found. Check back soon!</p>
+        </div>
+      )}
 
       <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12 text-center space-y-6">
         <h2 className="text-3xl font-bold">{t("blog.newsletter.title")}</h2>

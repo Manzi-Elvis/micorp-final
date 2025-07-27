@@ -22,6 +22,17 @@ export default function TeamPage() {
       },
     },
     {
+      name: t("team.members.thierry.name"),
+      role: t("team.members.thierry.role"),
+      bio: t("team.members.thierry.bio"),
+      image: "/placeholder.svg?height=400&width=300",
+      social: {
+        github: "https://github.com/Djsensei1/",
+        linkedin: "#",
+        email: "contact@micorp.pro",
+      },
+    },
+    {
       name: t("team.members.pazzo.name"),
       role: t("team.members.pazzo.role"),
       bio: t("team.members.pazzo.bio"),
