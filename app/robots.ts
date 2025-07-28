@@ -5,9 +5,10 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/private/", "/admin/"],
+      disallow: ["/private/", "/admin/", "/api/"],
     },
     sitemap: "https://micorp.pro/sitemap.xml",
+    host: "https://micorp.pro",
   }
 }
 
