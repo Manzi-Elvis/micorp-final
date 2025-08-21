@@ -16,13 +16,14 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Micorp",
-    default: "Micorp - Technology Solutions & Software Development",
+    template: "%s | Mirror Corporation",
+    default: "Mirror Corporation | Technology Solutions & Software Development",
   },
   description:
-    "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services. Transform your business with our expert team.",
+    "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services. Transform your business with our expert team.",
   keywords: [
     "Micorp",
+    "Mirror Corporation",
     "software development",
     "web development",
     "mobile app development",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Chaste Djaziri" }],
   creator: "Chaste Djaziri",
-  publisher: "Micorp",
+  publisher: "Mirror Corporation",
   formatDetection: {
     email: false,
     address: false,
@@ -56,9 +57,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://micorp.pro',
-    title: 'Micorp - Technology Solutions & Software Development',
-    description: 'Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
-    siteName: 'Micorp',
+    title: 'Mirror Corporation | Technology Solutions & Software Development',
+    description: 'Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
+    siteName: 'Mirror Corporation',
     images: [
       {
         url: '/brand/logo.png',
@@ -70,8 +71,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Micorp - Technology Solutions & Software Development',
-    description: 'Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
+    title: 'Mirror Corporation | Technology Solutions & Software Development',
+    description: 'Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
     images: ['/brand/logo.png'],
   },
   robots: {
@@ -104,17 +105,17 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Micorp",
+              "name": "Mirror Corporation",
               "url": "https://micorp.pro",
               "logo": "https://micorp.pro/brand/logo.png",
-              "description": "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
+              "description": "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Rwanda"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+250-xxx-xxx-xxx",
+                "telephone": "+250-794-578-640",
                 "contactType": "customer service",
                 "email": "contact@micorp.pro"
               },
@@ -131,9 +132,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Micorp",
+              "name": "Mirror Corporation",
               "url": "https://micorp.pro",
-              "description": "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
+              "description": "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {

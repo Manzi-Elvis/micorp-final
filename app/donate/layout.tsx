@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Donate - Support Micorp Technology Projects",
-  description: "Support Micorp's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
+  title: "Donate - Support Mirror Corporation Technology Projects",
+  description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
   keywords: [
+    "donate to Mirror Corporation",
     "donate to Micorp",
     "support technology projects",
     "open-source support",
@@ -13,10 +14,10 @@ export const metadata: Metadata = {
     "technology community support",
   ],
   openGraph: {
-    title: "Donate - Support Micorp Technology Projects",
-    description: "Support Micorp's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
+    title: "Donate - Support Mirror Corporation Technology Projects",
+    description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
     url: "https://micorp.pro/donate",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -30,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Donate - Support Micorp Technology Projects",
-    description: "Support Micorp's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
+    title: "Donate - Support Mirror Corporation Technology Projects",
+    description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
     images: ["/brand/logo.png"],
   },
   alternates: {

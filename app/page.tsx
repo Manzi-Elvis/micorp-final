@@ -9,11 +9,12 @@ import CTA from "@/components/cta"
 import InteractiveTechSection from "@/components/interactive-tech-section"
 
 export const metadata: Metadata = {
-  title: "Micorp - Technology Solutions & Software Development",
+  title: "Mirror Corporation | Technology Solutions & Software Development",
   description:
-    "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services. Transform your business with our expert team.",
+    "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services. Transform your business with our expert team.",
   keywords: [
     "Micorp",
+    "Mirror Corporation",
     "software development",
     "web development",
     "mobile app development",
@@ -31,16 +32,16 @@ export const metadata: Metadata = {
     "technology consulting",
   ],
   openGraph: {
-    title: "Micorp - Technology Solutions & Software Development",
-    description: "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
+    title: "Mirror Corporation | Technology Solutions & Software Development",
+    description: "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
     url: "https://micorp.pro",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
         width: 1200,
         height: 630,
-        alt: "Micorp - Technology Solutions",
+        alt: "Mirror Corporation - Technology Solutions",
       },
     ],
     locale: "en_US",
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Micorp - Technology Solutions & Software Development",
-    description: "Micorp delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
+    title: "Mirror Corporation | Technology Solutions & Software Development",
+    description: "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
     images: ["/brand/logo.png"],
   },
   alternates: {

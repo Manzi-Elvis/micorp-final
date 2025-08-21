@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: "Explore Micorp's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
   keywords: [
     "Micorp services",
+    "Mirror Corporation services",
     "web development services",
     "mobile app development",
     "AI/ML services",
@@ -17,10 +18,10 @@ export const metadata: Metadata = {
     "software development company",
   ],
   openGraph: {
-    title: "Services - Micorp Technology Solutions",
-    description: "Explore Micorp's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
+    title: "Services - Mirror Corporation Technology Solutions",
+    description: "Explore Mirror Corporation's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
     url: "https://micorp.pro/services",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services - Micorp Technology Solutions",
-    description: "Explore Micorp's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
+    title: "Services - Mirror Corporation Technology Solutions",
+    description: "Explore Mirror Corporation's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
     images: ["/brand/logo.png"],
   },
   alternates: {
@@ -56,8 +57,8 @@ export default function ServicesLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Micorp Technology Services",
-            "description": "Comprehensive technology services offered by Micorp",
+            "name": "Mirror Corporation Technology Services",
+            "description": "Comprehensive technology services offered by Mirror Corporation",
             "url": "https://micorp.pro/services",
             "itemListElement": [
               {

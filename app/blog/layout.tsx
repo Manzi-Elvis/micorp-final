@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Blog - Micorp Technology Insights",
-  description: "Stay updated with the latest technology trends, insights, and best practices from Micorp. Read about AI/ML, web development, cybersecurity, and technology innovation.",
+  title: "Blog - Mirror Corporation Technology Insights",
+  description: "Stay updated with the latest technology trends, insights, and best practices from Mirror Corporation. Read about AI/ML, web development, cybersecurity, and technology innovation.",
   keywords: [
     "Micorp blog",
+    "Mirror Corporation blog",
     "technology blog",
     "software development blog",
     "AI/ML insights",
@@ -15,10 +16,10 @@ export const metadata: Metadata = {
     "technology insights",
   ],
   openGraph: {
-    title: "Blog - Micorp Technology Insights",
-    description: "Stay updated with the latest technology trends, insights, and best practices from Micorp. Read about AI/ML, web development, cybersecurity, and technology innovation.",
+    title: "Blog - Mirror Corporation Technology Insights",
+    description: "Stay updated with the latest technology trends, insights, and best practices from Mirror Corporation. Read about AI/ML, web development, cybersecurity, and technology innovation.",
     url: "https://micorp.pro/blog",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog - Micorp Technology Insights",
-    description: "Stay updated with the latest technology trends, insights, and best practices from Micorp. Read about AI/ML, web development, cybersecurity, and technology innovation.",
+    title: "Blog - Mirror Corporation Technology Insights",
+    description: "Stay updated with the latest technology trends, insights, and best practices from Mirror Corporation. Read about AI/ML, web development, cybersecurity, and technology innovation.",
     images: ["/brand/logo.png"],
   },
   alternates: {

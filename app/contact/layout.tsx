@@ -1,11 +1,13 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Micorp - Get in Touch",
-  description: "Contact Micorp for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
+  title: "Contact Mirror Corporation - Get in Touch",
+  description: "Contact Mirror Corporation for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
   keywords: [
     "contact Micorp",
+    "contact Mirror Corporation",
     "Micorp contact",
+    "Mirror Corporation contact",
     "technology consulting contact",
     "software development contact",
     "project inquiry",
@@ -14,10 +16,10 @@ export const metadata: Metadata = {
     "mobile app development contact",
   ],
   openGraph: {
-    title: "Contact Micorp - Get in Touch",
-    description: "Contact Micorp for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
+    title: "Contact Mirror Corporation - Get in Touch",
+    description: "Contact Mirror Corporation for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
     url: "https://micorp.pro/contact",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -31,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Micorp - Get in Touch",
-    description: "Contact Micorp for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
+    title: "Contact Mirror Corporation - Get in Touch",
+    description: "Contact Mirror Corporation for technology solutions, project inquiries, or collaboration opportunities. Reach out to our team for web development, mobile apps, AI/ML, and more.",
     images: ["/brand/logo.png"],
   },
   alternates: {
@@ -53,8 +55,8 @@ export default function ContactLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact Micorp",
-            "description": "Contact Micorp for technology solutions, project inquiries, or collaboration opportunities.",
+            "name": "Contact Mirror Corporation",
+            "description": "Contact Mirror Corporation for technology solutions, project inquiries, or collaboration opportunities.",
             "url": "https://micorp.pro/contact",
             "mainEntity": {
               "@type": "ContactPoint",

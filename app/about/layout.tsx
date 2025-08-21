@@ -1,12 +1,16 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Micorp - Our Story & Values",
+  title: "About Mirror Corporation - Our Story & Values",
   description: "Learn about Micorp's journey, our core values of innovation, excellence, collaboration, and integrity. Meet our founder and discover what drives our technology solutions.",
   keywords: [
+    "about Mirror Corporation",
     "about Micorp",
+    "Mirror Corporation story",
     "Micorp story",
+    "Mirror Corporation values",
     "Micorp values",
+    "Mirror Corporation founder",
     "Micorp founder",
     "technology company",
     "software development company",
@@ -16,10 +20,10 @@ export const metadata: Metadata = {
     "integrity",
   ],
   openGraph: {
-    title: "About Micorp - Our Story & Values",
-    description: "Learn about Micorp's journey, our core values of innovation, excellence, collaboration, and integrity. Meet our founder and discover what drives our technology solutions.",
+    title: "About Mirror Corporation - Our Story & Values",
+    description: "Learn about Mirror Corporation's journey, our core values of innovation, excellence, collaboration, and integrity. Meet our founder and discover what drives our technology solutions.",
     url: "https://micorp.pro/about",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Micorp - Our Story & Values",
+    title: "About Mirror Corporation - Our Story & Values",
     description: "Learn about Micorp's journey, our core values of innovation, excellence, collaboration, and integrity. Meet our founder and discover what drives our technology solutions.",
     images: ["/brand/logo.png"],
   },

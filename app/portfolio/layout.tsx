@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Portfolio - Micorp Projects & Case Studies",
-  description: "Explore Micorp's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
+  title: "Portfolio - Mirror Corporation Projects & Case Studies",
+  description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
   keywords: [
     "Micorp portfolio",
+    "Mirror Corporation portfolio",
     "technology projects",
     "web applications",
     "mobile apps",
@@ -16,10 +17,10 @@ export const metadata: Metadata = {
     "technology solutions",
   ],
   openGraph: {
-    title: "Portfolio - Micorp Projects & Case Studies",
-    description: "Explore Micorp's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
+    title: "Portfolio - Mirror Corporation Projects & Case Studies",
+    description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
     url: "https://micorp.pro/portfolio",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio - Micorp Projects & Case Studies",
-    description: "Explore Micorp's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
+    title: "Portfolio - Mirror Corporation Projects & Case Studies",
+    description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
     images: ["/brand/logo.png"],
   },
   alternates: {
@@ -55,8 +56,8 @@ export default function PortfolioLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Micorp Portfolio Projects",
-            "description": "Successful technology projects completed by Micorp",
+            "name": "Mirror Corporation Portfolio Projects",
+            "description": "Successful technology projects completed by Mirror Corporation",
             "url": "https://micorp.pro/portfolio",
             "itemListElement": [
               {

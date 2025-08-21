@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Team - Micorp Technology Experts",
-  description: "Meet the talented team of technology experts at Micorp. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
+  title: "Team - Mirror Corporation Technology Experts",
+  description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
   keywords: [
+    "Mirror Corporation team",
     "Micorp team",
     "technology experts",
     "software developers",
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
     "technology consulting team",
   ],
   openGraph: {
-    title: "Team - Micorp Technology Experts",
-    description: "Meet the talented team of technology experts at Micorp. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
+    title: "Team - Mirror Corporation Technology Experts",
+    description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
     url: "https://micorp.pro/team",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Team - Micorp Technology Experts",
-    description: "Meet the talented team of technology experts at Micorp. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
+    title: "Team - Mirror Corporation Technology Experts",
+    description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
     images: ["/brand/logo.png"],
   },
   alternates: {
@@ -53,8 +54,8 @@ export default function TeamLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Micorp Team Members",
-            "description": "Technology experts and professionals at Micorp",
+            "name": "Mirror Corporation Team Members",
+            "description": "Technology experts and professionals at Mirror Corporation",
             "url": "https://micorp.pro/team",
             "itemListElement": [
               {

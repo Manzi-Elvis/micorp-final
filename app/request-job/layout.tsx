@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Request a Job - Micorp Project Inquiry",
-  description: "Submit your project requirements to Micorp. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
+  title: "Request a Mirror Corporation - Micorp Project Inquiry",
+  description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
   keywords: [
+    "request job Mirror Corporation",
     "request job Micorp",
     "project inquiry",
     "custom software development",
@@ -14,10 +15,10 @@ export const metadata: Metadata = {
     "project requirements",
   ],
   openGraph: {
-    title: "Request a Job - Micorp Project Inquiry",
-    description: "Submit your project requirements to Micorp. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
+    title: "Request a Job - Mirror Corporation Project Inquiry",
+    description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
     url: "https://micorp.pro/request-job",
-    siteName: "Micorp",
+    siteName: "Mirror Corporation",
     images: [
       {
         url: "/brand/logo.png",
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Request a Job - Micorp Project Inquiry",
-    description: "Submit your project requirements to Micorp. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
+    title: "Request a Job - Mirror Corporation Project Inquiry",
+    description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
     images: ["/brand/logo.png"],
   },
   alternates: {
@@ -53,12 +54,12 @@ export default function RequestJobLayout({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Micorp Technology Services",
-            "description": "Submit your project requirements to Micorp. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
+            "name": "Mirror Corporation Technology Services",
+            "description": "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
             "url": "https://micorp.pro/request-job",
             "provider": {
               "@type": "Organization",
-              "name": "Micorp",
+              "name": "Mirror Corporation",
               "url": "https://micorp.pro"
             },
             "potentialAction": {
