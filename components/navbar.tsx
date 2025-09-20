@@ -27,14 +27,14 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { name: t("home"), href: "/" },
-    { name: t("about"), href: "/about" },
-    { name: t("services"), href: "/services" },
-    { name: t("portfolio"), href: "/portfolio" },
-    { name: t("team"), href: "/team" },
-    { name: t("blog"), href: "/blog" },
-    { name: t("request"), href: "/request-job" },
-    { name: t("contact"), href: "/contact" },
+    { name: t("Home"), href: "/" },
+    { name: t("About"), href: "/about" },
+    { name: t("Services"), href: "/services" },
+    { name: t("Portfolio"), href: "/portfolio" },
+    { name: t("Team"), href: "/team" },
+    { name: t("Blog"), href: "/blog" },
+    { name: t("Request"), href: "/request-job" },
+    { name: t("Contact"), href: "/contact" },
   ]
 
   return (

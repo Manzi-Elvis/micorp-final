@@ -60,27 +60,27 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("about")}
+                  {t("About")}
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("services")}
+                  {t("Services")}
                 </Link>
               </li>
               <li>
                 <Link href="/portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("portfolio")}
+                  {t("Portfolio")}
                 </Link>
               </li>
               <li>
                 <Link href="/team" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("team")}
+                  {t("Team")}
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("blog")}
+                  {t("Blog")}
                 </Link>
               </li>
             </ul>
