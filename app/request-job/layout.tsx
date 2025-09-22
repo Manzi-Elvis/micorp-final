@@ -1,8 +1,12 @@
 import type { Metadata } from "next"
 
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
+
 export const metadata: Metadata = {
   title: "Request a Mirror Corporation - Micorp Project Inquiry",
-  description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
+  description:
+    "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
   keywords: [
     "request job Mirror Corporation",
     "request job Micorp",
@@ -13,15 +17,17 @@ export const metadata: Metadata = {
     "technology project",
     "software development quote",
     "project requirements",
+    "Rwanda software partner",
   ],
   openGraph: {
     title: "Request a Job - Mirror Corporation Project Inquiry",
-    description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
-    url: "https://micorp.pro/request-job",
+    description:
+      "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
+    url: `${siteUrl}/request-job`,
     siteName: "Mirror Corporation",
     images: [
       {
-        url: "/brand/logo.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Request a Job - Micorp",
@@ -33,8 +39,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Request a Job - Mirror Corporation Project Inquiry",
-    description: "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
-    images: ["/brand/logo.png"],
+    description:
+      "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
+    images: [ogImage],
   },
   alternates: {
     canonical: "/request-job",
@@ -56,17 +63,17 @@ export default function RequestJobLayout({
             "@type": "Service",
             "name": "Mirror Corporation Technology Services",
             "description": "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
-            "url": "https://micorp.pro/request-job",
+            "url": `${siteUrl}/request-job`,
             "provider": {
               "@type": "Organization",
               "name": "Mirror Corporation",
-              "url": "https://micorp.pro"
+              "url": siteUrl
             },
             "potentialAction": {
               "@type": "RequestAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://micorp.pro/request-job"
+                "urlTemplate": `${siteUrl}/request-job`
               },
               "result": {
                 "@type": "Service"

@@ -1,8 +1,12 @@
 import type { Metadata } from "next"
 
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
+
 export const metadata: Metadata = {
   title: "Portfolio - Mirror Corporation Projects & Case Studies",
-  description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
+  description:
+    "Explore Mirror Corporation's portfolio of high-impact technology projects spanning healthcare, fintech, telecom, and smart industry across Africa and global markets.",
   keywords: [
     "Micorp portfolio",
     "Mirror Corporation portfolio",
@@ -15,15 +19,17 @@ export const metadata: Metadata = {
     "case studies",
     "software projects",
     "technology solutions",
+    "Rwanda software portfolio",
   ],
   openGraph: {
     title: "Portfolio - Mirror Corporation Projects & Case Studies",
-    description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
-    url: "https://micorp.pro/portfolio",
+    description:
+      "Explore Mirror Corporation's portfolio of high-impact technology projects spanning healthcare, fintech, telecom, and smart industry across Africa and global markets.",
+    url: `${siteUrl}/portfolio`,
     siteName: "Mirror Corporation",
     images: [
       {
-        url: "/brand/logo.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Micorp Portfolio",
@@ -35,8 +41,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Portfolio - Mirror Corporation Projects & Case Studies",
-    description: "Explore Mirror Corporation's portfolio of successful technology projects including web applications, mobile apps, healthcare solutions, financial systems, and IoT platforms.",
-    images: ["/brand/logo.png"],
+    description:
+      "Explore Mirror Corporation's portfolio of high-impact technology projects spanning healthcare, fintech, telecom, and smart industry across Africa and global markets.",
+    images: [ogImage],
   },
   alternates: {
     canonical: "/portfolio",
@@ -58,14 +65,14 @@ export default function PortfolioLayout({
             "@type": "ItemList",
             "name": "Mirror Corporation Portfolio Projects",
             "description": "Successful technology projects completed by Mirror Corporation",
-            "url": "https://micorp.pro/portfolio",
+            "url": `${siteUrl}/portfolio`,
             "itemListElement": [
               {
                 "@type": "CreativeWork",
                 "position": 1,
                 "name": "Watch Health App",
                 "description": "Healthcare monitoring application with real-time data tracking",
-                "url": "https://micorp.pro/portfolio#watch",
+                "url": `${siteUrl}/portfolio#watch`,
                 "creator": {
                   "@type": "Organization",
                   "name": "Micorp"
@@ -77,7 +84,7 @@ export default function PortfolioLayout({
                 "position": 2,
                 "name": "Yup Analytics Platform",
                 "description": "Data analytics and IoT platform for business intelligence",
-                "url": "https://micorp.pro/portfolio#yup",
+                "url": `${siteUrl}/portfolio#yup`,
                 "creator": {
                   "@type": "Organization",
                   "name": "Micorp"
@@ -89,7 +96,7 @@ export default function PortfolioLayout({
                 "position": 3,
                 "name": "FinEdge Financial System",
                 "description": "Real-time financial management and security platform",
-                "url": "https://micorp.pro/portfolio#finedge",
+                "url": `${siteUrl}/portfolio#finedge`,
                 "creator": {
                   "@type": "Organization",
                   "name": "Micorp"

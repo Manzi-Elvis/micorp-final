@@ -1,8 +1,12 @@
 import type { Metadata } from "next"
 
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
+
 export const metadata: Metadata = {
   title: "Team - Mirror Corporation Technology Experts",
-  description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
+  description:
+    "Meet the technology experts at Mirror Corporation. Our cross-functional team of software engineers, designers, analysts, and product leaders delivers secure, scalable digital solutions.",
   keywords: [
     "Mirror Corporation team",
     "Micorp team",
@@ -13,15 +17,17 @@ export const metadata: Metadata = {
     "technology professionals",
     "development team",
     "technology consulting team",
+    "Rwanda tech talent",
   ],
   openGraph: {
     title: "Team - Mirror Corporation Technology Experts",
-    description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
-    url: "https://micorp.pro/team",
+    description:
+      "Meet the technology experts at Mirror Corporation. Our cross-functional team of software engineers, designers, analysts, and product leaders delivers secure, scalable digital solutions.",
+    url: `${siteUrl}/team`,
     siteName: "Mirror Corporation",
     images: [
       {
-        url: "/brand/logo.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Micorp Team",
@@ -33,8 +39,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Team - Mirror Corporation Technology Experts",
-    description: "Meet the talented team of technology experts at Mirror Corporation. Our diverse team of developers, designers, data scientists, and technology professionals deliver innovative solutions.",
-    images: ["/brand/logo.png"],
+    description:
+      "Meet the technology experts at Mirror Corporation. Our cross-functional team of software engineers, designers, analysts, and product leaders delivers secure, scalable digital solutions.",
+    images: [ogImage],
   },
   alternates: {
     canonical: "/team",
@@ -56,14 +63,14 @@ export default function TeamLayout({
             "@type": "ItemList",
             "name": "Mirror Corporation Team Members",
             "description": "Technology experts and professionals at Mirror Corporation",
-            "url": "https://micorp.pro/team",
+            "url": `${siteUrl}/team`,
             "itemListElement": [
               {
                 "@type": "Person",
                 "position": 1,
                 "name": "Chaste Djaziri",
                 "jobTitle": "Founder & CEO",
-                "url": "https://micorp.pro/team#chaste",
+                "url": `${siteUrl}/team#chaste`,
                 "worksFor": {
                   "@type": "Organization",
                   "name": "Micorp"
@@ -78,7 +85,7 @@ export default function TeamLayout({
                 "position": 2,
                 "name": "Amina",
                 "jobTitle": "Project Manager",
-                "url": "https://micorp.pro/team#amina",
+                "url": `${siteUrl}/team#amina`,
                 "worksFor": {
                   "@type": "Organization",
                   "name": "Micorp"
@@ -89,7 +96,7 @@ export default function TeamLayout({
                 "position": 3,
                 "name": "Faylinn",
                 "jobTitle": "Mobile Developer",
-                "url": "https://micorp.pro/team#faylinn",
+                "url": `${siteUrl}/team#faylinn`,
                 "worksFor": {
                   "@type": "Organization",
                   "name": "Micorp"

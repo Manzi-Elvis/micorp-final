@@ -13,18 +13,24 @@ import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
 
 export const metadata: Metadata = {
   title: {
     template: "%s | Mirror Corporation",
     default: "Mirror Corporation | Technology Solutions & Software Development",
   },
+  applicationName: "Mirror Corporation",
   description:
-    "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services. Transform your business with our expert team.",
+    "Mirror Corporation is a Rwanda-based technology partner delivering custom software, web and mobile development, AI, cybersecurity, and cloud engineering for startups and enterprises across Africa and beyond.",
   keywords: [
     "Micorp",
     "Mirror Corporation",
+    "Mirror Corporation Rwanda",
     "software development",
+    "software outsourcing Africa",
+    "custom software engineering",
     "web development",
     "mobile app development",
     "technology solutions",
@@ -39,30 +45,37 @@ export const metadata: Metadata = {
     "UI/UX design",
     "API development",
     "technology consulting",
+    "IT consulting Rwanda",
+    "digital transformation partner",
+    "product design and development",
+    "cloud migration experts",
+    "enterprise application modernization",
   ],
   authors: [{ name: "Chaste Djaziri" }],
   creator: "Chaste Djaziri",
   publisher: "Mirror Corporation",
+  category: "technology",
+  referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  generator: 'Next.js',
-  metadataBase: new URL('https://micorp.pro'),
+  generator: "Next.js",
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://micorp.pro',
+    url: siteUrl,
     title: 'Mirror Corporation | Technology Solutions & Software Development',
-    description: 'Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
+    description: 'Mirror Corporation is a technology partner delivering custom software, digital transformation, and secure cloud solutions for ambitious organisations.',
     siteName: 'Mirror Corporation',
     images: [
       {
-        url: '/brand/logo.png',
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: 'Micorp Logo',
@@ -72,8 +85,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mirror Corporation | Technology Solutions & Software Development',
-    description: 'Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.',
-    images: ['/brand/logo.png'],
+    description: 'Mirror Corporation is a technology partner delivering custom software, digital transformation, and secure cloud solutions for ambitious organisations.',
+    images: [ogImage],
   },
   robots: {
     index: true,
@@ -87,7 +100,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? undefined,
   },
 }
 
@@ -106,13 +119,23 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Mirror Corporation",
-              "url": "https://micorp.pro",
-              "logo": "https://micorp.pro/brand/logo.png",
+              "url": siteUrl,
+              "logo": ogImage,
               "description": "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "Rwanda"
               },
+              "areaServed": [
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "Africa"
+                },
+                {
+                  "@type": "AdministrativeArea",
+                  "name": "Europe"
+                }
+              ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+250-794-578-640",
@@ -121,7 +144,8 @@ export default function RootLayout({
               },
               "sameAs": [
                 "https://github.com/chaste-djaziri",
-                "https://instagram.com/chaste_djaziri/"
+                "https://instagram.com/chaste_djaziri/",
+                "https://www.linkedin.com/in/chaste-djaziri-6bb4b62a5/"
               ]
             })
           }}
@@ -133,13 +157,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Mirror Corporation",
-              "url": "https://micorp.pro",
+              "url": siteUrl,
               "description": "Mirror Corporation delivers innovative technology solutions including web development, mobile apps, AI/ML, cybersecurity, and cloud services.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://micorp.pro/search?q={search_term_string}"
+                  "urlTemplate": `${siteUrl}/search?q={search_term_string}`
                 },
                 "query-input": "required name=search_term_string"
               }
@@ -157,38 +181,70 @@ export default function RootLayout({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://micorp.pro"
+                  "item": siteUrl
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "About",
-                  "item": "https://micorp.pro/about"
+                  "item": `${siteUrl}/about`
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Services",
-                  "item": "https://micorp.pro/services"
+                  "item": `${siteUrl}/services`
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "name": "Portfolio",
-                  "item": "https://micorp.pro/portfolio"
+                  "item": `${siteUrl}/portfolio`
                 },
                 {
                   "@type": "ListItem",
                   "position": 5,
                   "name": "Team",
-                  "item": "https://micorp.pro/team"
+                  "item": `${siteUrl}/team`
                 },
                 {
                   "@type": "ListItem",
                   "position": 6,
                   "name": "Contact",
-                  "item": "https://micorp.pro/contact"
+                  "item": `${siteUrl}/contact`
                 }
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Mirror Corporation",
+              "url": siteUrl,
+              "image": ogImage,
+              "description": "Mirror Corporation provides full-stack software development, AI engineering, cybersecurity, and cloud services for global organisations.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Rwanda"
+              },
+              "areaServed": "Worldwide",
+              "telephone": "+250-794-578-640",
+              "sameAs": [
+                "https://github.com/chaste-djaziri",
+                "https://instagram.com/chaste_djaziri/",
+                "https://www.linkedin.com/in/chaste-djaziri-6bb4b62a5/"
+              ],
+              "serviceType": [
+                "Custom Software Development",
+                "Web Application Development",
+                "Mobile Application Development",
+                "Artificial Intelligence Engineering",
+                "Cybersecurity Consulting",
+                "Cloud Infrastructure Services"
               ]
             })
           }}

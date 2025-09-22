@@ -1,8 +1,12 @@
 import type { Metadata } from "next"
 
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
+
 export const metadata: Metadata = {
   title: "Donate - Support Mirror Corporation Technology Projects",
-  description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
+  description:
+    "Support Mirror Corporation's technology initiatives, open-source projects, and community training. Your contribution helps us expand innovation across Africa and global markets.",
   keywords: [
     "donate to Mirror Corporation",
     "donate to Micorp",
@@ -12,15 +16,17 @@ export const metadata: Metadata = {
     "software development support",
     "innovation funding",
     "technology community support",
+    "support African tech",
   ],
   openGraph: {
     title: "Donate - Support Mirror Corporation Technology Projects",
-    description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
-    url: "https://micorp.pro/donate",
+    description:
+      "Support Mirror Corporation's technology initiatives, open-source projects, and community training. Your contribution helps us expand innovation across Africa and global markets.",
+    url: `${siteUrl}/donate`,
     siteName: "Mirror Corporation",
     images: [
       {
-        url: "/brand/logo.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Donate to Micorp",
@@ -32,8 +38,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Donate - Support Mirror Corporation Technology Projects",
-    description: "Support Mirror Corporation's technology initiatives and open-source projects. Your donations help us develop innovative solutions and contribute to the technology community.",
-    images: ["/brand/logo.png"],
+    description:
+      "Support Mirror Corporation's technology initiatives, open-source projects, and community training. Your contribution helps us expand innovation across Africa and global markets.",
+    images: [ogImage],
   },
   alternates: {
     canonical: "/donate",

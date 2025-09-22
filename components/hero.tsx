@@ -104,7 +104,7 @@ export default function Hero() {
           >
             <Image
               src="/brand/heroo3.png"
-              alt="Mirror Corporation"
+              alt={t("hero.imageAlt")}
               fill
               className="object-cover"
             />
@@ -139,4 +139,3 @@ export default function Hero() {
     </section>
   )
 }
-

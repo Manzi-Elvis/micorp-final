@@ -16,6 +16,7 @@ export default function ServicesPage() {
       icon: <Code className="h-6 w-6 text-blue-600" />,
       tags: [t("services.tags.enterprise"), t("services.tags.workflow"), t("services.tags.integration")],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "custom-software",
     },
     {
       title: t("services.webDevelopment.title"),
@@ -28,6 +29,7 @@ export default function ServicesPage() {
         t("services.tags.cms"),
       ],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "web-development",
     },
     {
       title: t("services.mobileDevelopment.title"),
@@ -40,6 +42,7 @@ export default function ServicesPage() {
         t("services.tags.flutter"),
       ],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "mobile-development",
     },
     {
       title: t("services.databaseSolutions.title"),
@@ -52,6 +55,7 @@ export default function ServicesPage() {
         t("services.tags.performance"),
       ],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "database",
     },
     {
       title: t("services.dataAnalytics.title"),
@@ -59,6 +63,7 @@ export default function ServicesPage() {
       icon: <LineChart className="h-6 w-6 text-blue-600" />,
       tags: [t("services.tags.bi"), t("services.tags.predictive"), t("services.tags.visualization")],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "analytics",
     },
     {
       title: t("services.cybersecurity.title"),
@@ -66,6 +71,7 @@ export default function ServicesPage() {
       icon: <ShieldCheck className="h-6 w-6 text-blue-600" />,
       tags: [t("services.tags.security"), t("services.tags.penetration"), t("services.tags.compliance")],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "cybersecurity",
     },
     {
       title: t("services.cloudServices.title"),
@@ -73,6 +79,7 @@ export default function ServicesPage() {
       icon: <Cloud className="h-6 w-6 text-blue-600" />,
       tags: [t("services.tags.aws"), t("services.tags.azure"), t("services.tags.google"), t("services.tags.migration")],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "cloud",
     },
     {
       title: t("services.aiMl.title"),
@@ -80,6 +87,7 @@ export default function ServicesPage() {
       icon: <Cpu className="h-6 w-6 text-blue-600" />,
       tags: [t("services.tags.models"), t("services.tags.nlp"), t("services.tags.vision")],
       image: "/placeholder.svg?height=300&width=400",
+      anchor: "ai-ml",
     },
   ]
 
@@ -91,10 +99,15 @@ export default function ServicesPage() {
       </section>
 
       <section className="grid md:grid-cols-2 gap-8">
-        {services.map((service, index) => (
-          <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
+        {services.map((service) => (
+          <Card id={service.anchor} key={service.anchor} className="overflow-hidden transition-all hover:shadow-md">
             <div className="relative h-48">
-              <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+              <Image
+                src={service.image || "/placeholder.svg"}
+                alt={`${service.title} service illustration`}
+                fill
+                className="object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-4">
                   <h3 className="text-xl font-bold text-white">{service.title}</h3>
@@ -169,4 +182,3 @@ export default function ServicesPage() {
     </div>
   )
 }
-

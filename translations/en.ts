@@ -14,7 +14,8 @@ export const en = {
     titleHighlight: "Integrity",
     title2: "in Technology",
     subtitle:
-      "Founded with a vision to reflect and amplify excellence across industries, delivering top-tier solutions that inspire and empower.",
+      "Mirror Corporation is a Kigali, Rwanda technology company delivering custom software, AI, cybersecurity, and cloud solutions for ambitious organisations across Africa and beyond.",
+    imageAlt: "Mirror Corporation engineers collaborating on a digital transformation project",
     exploreServices: "Explore Our Services",
     contactUs: "Contact Us",
     innovationMeetsIntegrity: "Innovation Meets Integrity",
@@ -23,9 +24,11 @@ export const en = {
 
   services: {
     pageTitle: "Our Services",
-    pageDescription: "Comprehensive technology solutions designed to transform your business and drive innovation.",
+    pageDescription:
+      "End-to-end digital services from our Rwanda-based experts covering custom software, web and mobile platforms, AI engineering, cybersecurity, and cloud modernisation.",
     sectionTitle: "Our Services",
-    sectionSubtitle: "Comprehensive technology solutions designed to transform your business and drive innovation.",
+    sectionSubtitle:
+      "End-to-end digital services from our Rwanda-based experts covering custom software, web and mobile platforms, AI engineering, cybersecurity, and cloud modernisation.",
 
     customSoftware: {
       title: "Custom Software",
@@ -104,7 +107,7 @@ export const en = {
   features: {
     title: "Why Choose Mirror Corporation?",
     subtitle:
-      "We combine technical expertise with a deep understanding of business needs to deliver solutions that truly make a difference.",
+      "Partner with a Kigali-based team that combines technical depth and strategic insight to deliver secure, scalable digital transformation.",
     feature1: "Innovative approach to problem-solving",
     feature2: "Dedicated team of experienced professionals",
     feature3: "Commitment to quality and excellence",
@@ -132,7 +135,7 @@ export const en = {
   },
 
   footer: {
-    tagline: "Where innovation meets integrity. Delivering top-tier technology solutions since 2025.",
+    tagline: "Where innovation meets integrity. Kigali-born technology solutions delivering global impact since 2025.",
     quickLinks: "Quick Links",
     services: "Services",
     contactUs: "Contact Us",
@@ -260,16 +263,16 @@ export const en = {
   about: {
     title: "About Mirror Corporation",
     subtitle:
-      "Where innovation meets integrity. Founded with a vision to reflect and amplify excellence across industries.",
+      "Where innovation meets integrity. Founded in Kigali, Rwanda with a vision to reflect and amplify excellence across industries.",
     story: {
       title: "Our Story",
       paragraph1:
-        "Founded in 2025 by Chaste Djaziri, Mirror Corporation emerged from a vision to create technology solutions that truly reflect the needs and aspirations of our clients.",
+        "Founded in 2025 by Chaste Djaziri, Mirror Corporation emerged in Kigali with a mission to deliver technology solutions that reflect the ambitions of modern organisations.",
       paragraph2:
-        "Starting with a small team of passionate innovators, we've grown to a diverse group of 11 talented professionals united by our commitment to excellence and integrity in everything we do.",
+        "Starting with a small team of passionate innovators, we've grown into a diverse group of technologists serving clients throughout East Africa and international markets.",
       paragraph3:
-        "Today, we stand as a beacon of innovation, helping businesses across various industries transform their digital presence and operations.",
-      imageAlt: "Mirror Corporation team",
+        "Today, we help businesses across finance, healthcare, telecom, and the public sector transform their digital presence and operations with secure, scalable platforms.",
+      imageAlt: "Mirror Corporation technology team collaborating in the Kigali innovation hub",
     },
     values: {
       title: "Our Core Values",
@@ -512,7 +515,7 @@ export const en = {
   // Contact page translations
   contact: {
     title: "Contact Us",
-    subtitle: "Have a question or want to discuss a project? We'd love to hear from you.",
+    subtitle: "Connect with our Kigali-based team to discuss your project, partnership, or technology roadmap.",
     form: {
       title: "Send Us a Message",
       description: "Fill out the form below and we'll get back to you as soon as possible.",
@@ -700,4 +703,3 @@ export const en = {
     },
   },
 }
-

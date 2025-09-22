@@ -1,8 +1,12 @@
 import type { Metadata } from "next"
 
+const siteUrl = "https://micorp.pro"
+const ogImage = `${siteUrl}/brand/logo.png`
+
 export const metadata: Metadata = {
   title: "Services - Micorp Technology Solutions",
-  description: "Explore Micorp's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
+  description:
+    "Explore Mirror Corporation's end-to-end technology services: custom software, responsive web platforms, native mobile apps, AI engineering, cybersecurity, cloud infrastructure, and enterprise data solutions.",
   keywords: [
     "Micorp services",
     "Mirror Corporation services",
@@ -16,15 +20,17 @@ export const metadata: Metadata = {
     "custom software development",
     "technology consulting",
     "software development company",
+    "digital transformation partner",
   ],
   openGraph: {
     title: "Services - Mirror Corporation Technology Solutions",
-    description: "Explore Mirror Corporation's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
-    url: "https://micorp.pro/services",
+    description:
+      "Explore Mirror Corporation's end-to-end technology services: custom software, responsive web platforms, native mobile apps, AI engineering, cybersecurity, cloud infrastructure, and enterprise data solutions.",
+    url: `${siteUrl}/services`,
     siteName: "Mirror Corporation",
     images: [
       {
-        url: "/brand/logo.png",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Micorp Services",
@@ -36,8 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Services - Mirror Corporation Technology Solutions",
-    description: "Explore Mirror Corporation's comprehensive technology services including web development, mobile apps, AI/ML, cybersecurity, cloud services, database solutions, and data analytics.",
-    images: ["/brand/logo.png"],
+    description:
+      "Explore Mirror Corporation's end-to-end technology services: custom software, responsive web platforms, native mobile apps, AI engineering, cybersecurity, cloud infrastructure, and enterprise data solutions.",
+    images: [ogImage],
   },
   alternates: {
     canonical: "/services",
