@@ -36,6 +36,7 @@ import {
 import { supabase, type JobRequest, type ContactSubmission } from "@/lib/supabase"
 import { toast } from "sonner"
 import QRCode from "qrcode"
+import { submitToIndexNow, submitAllSitePagesToIndexNow, type IndexNowSubmissionResult } from "@/lib/indexnow"
 
 const ADMIN_PASSWORD = "micorp2024admin"
 const SESSION_KEY = "micorp_admin_session"
@@ -62,6 +63,12 @@ export default function AdminPage() {
   const [qrBgColor, setQrBgColor] = useState("#FFFFFF")
   const [qrSize, setQrSize] = useState(256)
   const [includeLogo, setIncludeLogo] = useState(true)
+
+  // IndexNow state
+  const [indexNowDialog, setIndexNowDialog] = useState(false)
+  const [customUrls, setCustomUrls] = useState("")
+  const [submittingIndexNow, setSubmittingIndexNow] = useState(false)
+  const [indexNowResult, setIndexNowResult] = useState<IndexNowSubmissionResult | null>(null)
 
   // Check for existing session on component mount
   useEffect(() => {
@@ -231,6 +238,71 @@ export default function AdminPage() {
     } finally {
       setSendingEmail(false)
     }
+  }
+
+  const submitToIndexNowAPI = async (urls: string[]) => {
+    setSubmittingIndexNow(true)
+    setIndexNowResult(null)
+    
+    try {
+      const host = window.location.hostname
+      const result = await submitToIndexNow({
+        urls,
+        host,
+        baseUrl: window.location.origin
+      })
+      
+      setIndexNowResult(result)
+      
+      if (result.success) {
+        toast.success(`Successfully submitted ${result.submittedUrls?.length || 0} URLs to search engines`)
+      } else {
+        toast.error(`Failed to submit URLs: ${result.message}`)
+      }
+    } catch (error) {
+      console.error("Error submitting to IndexNow:", error)
+      toast.error("Failed to submit URLs to IndexNow")
+    } finally {
+      setSubmittingIndexNow(false)
+    }
+  }
+
+  const submitAllPages = async () => {
+    const allPages = [
+      '/',
+      '/about',
+      '/services',
+      '/portfolio',
+      '/blog',
+      '/contact',
+      '/team',
+      '/donate',
+      '/request-job',
+    ]
+    
+    const urls = allPages.map(page => `https://${window.location.hostname}${page}`)
+    await submitToIndexNowAPI(urls)
+  }
+
+  const submitCustomUrls = async () => {
+    if (!customUrls.trim()) {
+      toast.error("Please enter at least one URL")
+      return
+    }
+    
+    const urls = customUrls
+      .split('\n')
+      .map(url => url.trim())
+      .filter(url => url.length > 0)
+      .map(url => {
+        // Add protocol if missing
+        if (!url.startsWith('http://') && !url.startsWith('https://')) {
+          return `https://${url}`
+        }
+        return url
+      })
+    
+    await submitToIndexNowAPI(urls)
   }
 
   const updateJobStatus = async (id: string, status: string) => {
@@ -523,6 +595,97 @@ export default function AdminPage() {
                 >
                   Download QR Code
                 </Button>
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Dialog open={indexNowDialog} onOpenChange={setIndexNowDialog}>
+            <DialogTrigger asChild>
+              <Button variant="outline">
+                <Send className="h-4 w-4 mr-2" />
+                IndexNow
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <DialogTitle>Submit URLs to Search Engines</DialogTitle>
+                <DialogDescription>
+                  Use IndexNow to notify search engines about your website updates
+                </DialogDescription>
+              </DialogHeader>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <Label>Quick Actions</Label>
+                  <div className="flex gap-2">
+                    <Button 
+                      onClick={submitAllPages} 
+                      disabled={submittingIndexNow}
+                      variant="outline"
+                    >
+                      Submit All Pages
+                    </Button>
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="custom-urls">Custom URLs (one per line)</Label>
+                  <Textarea
+                    id="custom-urls"
+                    value={customUrls}
+                    onChange={(e) => setCustomUrls(e.target.value)}
+                    placeholder="https://example.com/page1&#10;https://example.com/page2&#10;example.com/page3"
+                    className="min-h-[150px]"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Enter URLs one per line. Protocol (https://) will be added automatically if missing.
+                  </p>
+                </div>
+
+                {indexNowResult && (
+                  <div className="space-y-2">
+                    <Label>Submission Result</Label>
+                    <div className={`p-3 rounded-lg border ${
+                      indexNowResult.success ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'
+                    }`}>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge className={indexNowResult.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}>
+                          {indexNowResult.success ? 'Success' : 'Failed'}
+                        </Badge>
+                        <span className="text-sm font-medium">Status: {indexNowResult.status}</span>
+                      </div>
+                      <p className="text-sm">{indexNowResult.message}</p>
+                      {indexNowResult.submittedUrls && indexNowResult.submittedUrls.length > 0 && (
+                        <div className="mt-2">
+                          <p className="text-sm font-medium">Submitted URLs:</p>
+                          <ul className="text-sm text-muted-foreground list-disc list-inside">
+                            {indexNowResult.submittedUrls.map((url, index) => (
+                              <li key={index}>{url}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {indexNowResult.errors && indexNowResult.errors.length > 0 && (
+                        <div className="mt-2">
+                          <p className="text-sm font-medium text-red-600">Errors:</p>
+                          <ul className="text-sm text-red-600 list-disc list-inside">
+                            {indexNowResult.errors.map((error, index) => (
+                              <li key={index}>{error}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                <div className="flex justify-between">
+                  <Button variant="outline" onClick={() => setIndexNowDialog(false)}>
+                    Close
+                  </Button>
+                  <Button onClick={submitCustomUrls} disabled={submittingIndexNow || !customUrls.trim()}>
+                    {submittingIndexNow ? "Submitting..." : "Submit Custom URLs"}
+                  </Button>
+                </div>
               </div>
             </DialogContent>
           </Dialog>
