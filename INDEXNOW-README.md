@@ -10,7 +10,7 @@ IndexNow is a protocol that allows website owners to instantly inform search eng
 
 ### 1. API Key Hosting ✅
 - API key file `91821fdd0afa4ae6b051868206501412.txt` is hosted in the `public` directory
-- Automatically accessible at `https://your-domain.com/91821fdd0afa4ae6b051868206501412.txt`
+- Automatically accessible at `https://micorp.pro/91821fdd0afa4ae6b051868206501412.txt`
 
 ### 2. IndexNow API Route ✅
 - **Endpoint**: `/api/indexnow`
@@ -23,10 +23,10 @@ curl -X POST http://localhost:3000/api/indexnow \
   -H "Content-Type: application/json" \
   -d '{
     "urls": [
-      "https://your-domain.com/page1",
-      "https://your-domain.com/page2"
+      "https://micorp.pro/page1",
+      "https://micorp.pro/page2"
     ],
-    "host": "your-domain.com"
+    "host": "micorp.pro"
   }'
 ```
 
@@ -58,8 +58,8 @@ curl -X POST http://localhost:3000/api/indexnow \
 import { submitToIndexNow } from '@/lib/indexnow';
 
 const result = await submitToIndexNow({
-  urls: ['https://your-domain.com/page1', 'https://your-domain.com/page2'],
-  host: 'your-domain.com'
+  urls: ['https://micorp.pro/page1', 'https://micorp.pro/page2'],
+  host: 'micorp.pro'
 });
 
 console.log(result);
@@ -67,11 +67,11 @@ console.log(result);
 
 ### 3. Via HTTP Request
 ```bash
-curl -X POST https://your-domain.com/api/indexnow \
+curl -X POST https://micorp.pro/api/indexnow \
   -H "Content-Type: application/json" \
   -d '{
-    "urls": ["https://your-domain.com/new-page"],
-    "host": "your-domain.com"
+    "urls": ["https://micorp.pro/new-page"],
+    "host": "micorp.pro"
   }'
 ```
 
@@ -163,18 +163,18 @@ Update the hostname in your code when deploying to production:
 
 1. Check API key file accessibility:
    ```bash
-   curl https://your-domain.com/91821fdd0afa4ae6b051868206501412.txt
+   curl https://micorp.pro/91821fdd0afa4ae6b051868206501412.txt
    ```
 
 2. Test API route:
    ```bash
-   curl -X GET https://your-domain.com/api/indexnow
+   curl -X GET https://micorp.pro/api/indexnow
    ```
 
 3. Verify URL format:
    ```javascript
    import { isValidUrl } from '@/lib/indexnow';
-   console.log(isValidUrl('https://your-domain.com/page'));
+   console.log(isValidUrl('https://micorp.pro/page'));
    ```
 
 ## Files Modified/Created

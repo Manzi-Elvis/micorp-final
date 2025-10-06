@@ -108,7 +108,7 @@ export async function GET() {
         host: 'example.com'
       }
     },
-    keyLocation: `https://your-domain.com/${INDEXNOW_API_KEY}.txt`
+    keyLocation: `https://micorp.pro/${INDEXNOW_API_KEY}.txt`
   });
 }
 

@@ -110,7 +110,7 @@ async function main() {
   await testLocalAPI();
 
   console.log('\n📋 Test Summary:');
-  console.log('1. IndexNow API Key file should be hosted at: https://your-domain.com/91821fdd0afa4ae6b051868206501412.txt');
+  console.log('1. IndexNow API Key file should be hosted at: https://micorp.pro/91821fdd0afa4ae6b051868206501412.txt');
   console.log('2. Your API route is available at: /api/indexnow');
   console.log('3. Admin interface includes IndexNow functionality');
   console.log('4. Use the admin panel to submit URLs to search engines');
