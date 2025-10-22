@@ -224,15 +224,33 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Mirror Corporation",
+              "alternateName": "Micorp",
               "url": siteUrl,
               "image": ogImage,
               "description": "Mirror Corporation provides full-stack software development, AI engineering, cybersecurity, and cloud services for global organisations.",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "Rwanda"
+                "addressCountry": "Rwanda",
+                "addressLocality": "Kigali"
               },
-              "areaServed": "Worldwide",
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "Rwanda"
+                },
+                {
+                  "@type": "Country", 
+                  "name": "Africa"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Europe"
+                }
+              ],
               "telephone": "+250-794-578-640",
+              "email": "contact@micorp.pro",
+              "foundingDate": "2024",
+              "numberOfEmployees": "15",
               "sameAs": [
                 "https://github.com/chaste-djaziri",
                 "https://instagram.com/chaste_djaziri/",
@@ -240,11 +258,155 @@ export default function RootLayout({
               ],
               "serviceType": [
                 "Custom Software Development",
-                "Web Application Development",
+                "Web Application Development", 
                 "Mobile Application Development",
                 "Artificial Intelligence Engineering",
+                "Machine Learning Solutions",
                 "Cybersecurity Consulting",
-                "Cloud Infrastructure Services"
+                "Cloud Infrastructure Services",
+                "Data Analytics",
+                "Database Solutions",
+                "UI/UX Design",
+                "API Development",
+                "Digital Transformation",
+                "Technology Consulting"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Technology Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Custom Software Development"
+                    }
+                  },
+                  {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Web Development"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service", 
+                      "name": "Mobile App Development"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI & Machine Learning"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cybersecurity Services"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Cloud Services"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Mirror Corporation",
+              "alternateName": "Micorp",
+              "url": siteUrl,
+              "logo": ogImage,
+              "image": ogImage,
+              "description": "Mirror Corporation is a technology company based in Kigali, Rwanda, specializing in custom software development, AI solutions, cybersecurity, and cloud services.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Rwanda",
+                "addressLocality": "Kigali"
+              },
+              "telephone": "+250-794-578-640",
+              "email": "contact@micorp.pro",
+              "openingHours": "Mo-Fr 08:00-18:00",
+              "priceRange": "$$",
+              "currenciesAccepted": "USD, RWF, EUR",
+              "paymentAccepted": "Credit Card, Bank Transfer, Mobile Money",
+              "areaServed": [
+                {
+                  "@type": "Country",
+                  "name": "Rwanda"
+                },
+                {
+                  "@type": "Country",
+                  "name": "Africa"
+                },
+                {
+                  "@type": "Country", 
+                  "name": "Europe"
+                }
+              ],
+              "hasMap": "https://maps.google.com/?q=Kigali,Rwanda",
+              "sameAs": [
+                "https://github.com/chaste-djaziri",
+                "https://instagram.com/chaste_djaziri/",
+                "https://www.linkedin.com/in/chaste-djaziri-6bb4b62a5/"
+              ]
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What services does Mirror Corporation offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mirror Corporation offers comprehensive technology services including custom software development, web and mobile application development, AI and machine learning solutions, cybersecurity services, cloud computing, data analytics, and digital transformation consulting."
+                  }
+                },
+                {
+                  "@type": "Question", 
+                  "name": "Where is Mirror Corporation located?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mirror Corporation is based in Kigali, Rwanda, and serves clients across Africa and beyond. We provide remote and on-site services to organizations worldwide."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How can I get a quote for my project?",
+                  "acceptedAnswer": {
+                    "@type": "Answer", 
+                    "text": "You can request a project quote by visiting our Request Project page, filling out our contact form, or emailing us directly at contact@micorp.pro. We provide free consultations and detailed project proposals."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What technologies does Mirror Corporation specialize in?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We specialize in modern web technologies (React, Next.js, Node.js), mobile development (React Native, Flutter), AI/ML frameworks, cloud platforms (AWS, Azure, Google Cloud), cybersecurity solutions, and database technologies."
+                  }
+                }
               ]
             })
           }}
