@@ -400,6 +400,14 @@ export const de = {
         dataScientist: "Data Science",
       },
     },
+    backToTeam: "Zurück zum Team",
+    joined: "Beigetreten",
+    skills: "Fähigkeiten",
+    projects: "Projekte",
+    achievements: "Erfolge",
+    experience: "Erfahrung",
+    education: "Bildung",
+    viewProject: "Projekt anzeigen",
   },
 
   // Portfolio page translations

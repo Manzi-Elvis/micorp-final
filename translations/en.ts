@@ -395,6 +395,14 @@ export const en = {
         dataScientist: "Data Science",
       },
     },
+    backToTeam: "Back to Team",
+    joined: "Joined",
+    skills: "Skills",
+    projects: "Projects",
+    achievements: "Achievements",
+    experience: "Experience",
+    education: "Education",
+    viewProject: "View Project",
   },
 
   // Portfolio page translations

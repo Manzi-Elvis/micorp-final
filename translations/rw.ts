@@ -395,6 +395,14 @@ export const rw = {
         dataScientist: "Data Science",
       },
     },
+    backToTeam: "Garuka ku Ishyirahamwe",
+    joined: "Yashyize hamwe",
+    skills: "Ubumenyi",
+    projects: "Ibigorwa",
+    achievements: "Ibyagezweho",
+    experience: "Ubuhanga",
+    education: "Uburezi",
+    viewProject: "Reba Igikorwa",
   },
 
   // Portfolio page translations

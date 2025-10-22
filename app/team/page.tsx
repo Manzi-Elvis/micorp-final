@@ -1,9 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 import { useTranslations } from "@/hooks/use-translations"
 
 export default function TeamPage() {
@@ -11,6 +12,7 @@ export default function TeamPage() {
 
   const teamMembers = [
     {
+      slug: "chaste-djaziri",
       name: t("teamPage.members.chaste.name"),
       role: t("teamPage.members.chaste.role"),
       bio: t("teamPage.members.chaste.bio"),
@@ -22,10 +24,11 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "thierry-ndayishimiye",
       name: t("teamPage.members.thierry.name"),
       role: t("teamPage.members.thierry.role"),
       bio: t("teamPage.members.thierry.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/thierry.jpg?height=400&width=300",
       social: {
         github: "https://github.com/Djsensei1/",
         linkedin: "#",
@@ -33,6 +36,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "patrick-igiraneza",
       name: t("teamPage.members.pazzo.name"),
       role: t("teamPage.members.pazzo.role"),
       bio: t("teamPage.members.pazzo.bio"),
@@ -44,6 +48,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "pacifique-kimana",
       name: t("teamPage.members.paccy.name"),
       role: t("teamPage.members.paccy.role"),
       bio: t("teamPage.members.paccy.bio"),
@@ -55,6 +60,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "honorata-umwamikazi",
       name: t("teamPage.members.queen.name"),
       role: t("teamPage.members.queen.role"),
       bio: t("teamPage.members.queen.bio"),
@@ -66,6 +72,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "joshua-ijabo",
       name: t("teamPage.members.josh.name"),
       role: t("teamPage.members.josh.role"),
       bio: t("teamPage.members.josh.bio"),
@@ -77,6 +84,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "anna-amina",
       name: t("teamPage.members.amina.name"),
       role: t("teamPage.members.amina.role"),
       bio: t("teamPage.members.amina.bio"),
@@ -88,6 +96,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "elvis-manzi",
       name: t("teamPage.members.elvis.name"),
       role: t("teamPage.members.elvis.role"),
       bio: t("teamPage.members.elvis.bio"),
@@ -99,6 +108,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "faylinn-ishimwe",
       name: t("teamPage.members.faylinn.name"),
       role: t("teamPage.members.faylinn.role"),
       bio: t("teamPage.members.faylinn.bio"),
@@ -110,6 +120,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "aliza-iganza",
       name: t("teamPage.members.aliza.name"),
       role: t("teamPage.members.aliza.role"),
       bio: t("teamPage.members.aliza.bio"),
@@ -121,6 +132,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "danny-ngabonziza",
       name: t("teamPage.members.danny.name"),
       role: t("teamPage.members.danny.role"),
       bio: t("teamPage.members.danny.bio"),
@@ -132,6 +144,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "didier-manirakiza",
       name: t("teamPage.members.didier.name"),
       role: t("teamPage.members.didier.role"),
       bio: t("teamPage.members.didier.bio"),
@@ -143,6 +156,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "rukundo-joseph",
       name: t("teamPage.members.rukundo.name"),
       role: t("teamPage.members.rukundo.role"),
       bio: t("teamPage.members.rukundo.bio"),
@@ -154,6 +168,7 @@ export default function TeamPage() {
       },
     },
     {
+      slug: "arnoud-kigenza",
       name: t("teamPage.members.arnoud.name"),
       role: t("teamPage.members.arnoud.role"),
       bio: t("teamPage.members.arnoud.bio"),
@@ -175,44 +190,93 @@ export default function TeamPage() {
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="overflow-hidden transition-all hover:shadow-md">
-            <div className="relative h-64">
-              <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-            </div>
-            <CardContent className="p-6 space-y-4">
+          <Card key={index} className="overflow-hidden transition-all hover:shadow-md group cursor-pointer">
+            {member.slug ? (
               <div>
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-blue-600 dark:text-blue-400">{member.role}</p>
+                <Link href={`/team/${member.slug}`} className="block">
+                  <div className="relative h-64">
+                    <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                      <ExternalLink className="h-8 w-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                  </div>
+                </Link>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h3 className="text-xl font-bold">{member.name}</h3>
+                    <p className="text-blue-600 dark:text-blue-400">{member.role}</p>
+                  </div>
+                  <p className="text-muted-foreground text-sm">{member.bio}</p>
+                  <div className="flex gap-2">
+                    <a
+                      href={member.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.github")}
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={member.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.linkedin")}
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={`mailto:${member.social.email}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.email")}
+                    >
+                      <Mail className="h-5 w-5" />
+                    </a>
+                  </div>
+                </CardContent>
               </div>
-              <p className="text-muted-foreground text-sm">{member.bio}</p>
-              <div className="flex gap-2">
-                <a
-                  href={member.social.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("teamPage.social.github")}
-                >
-                  <Github className="h-5 w-5" />
-                </a>
-                <a
-                  href={member.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("teamPage.social.linkedin")}
-                >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-                <a
-                  href={`mailto:${member.social.email}`}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("teamPage.social.email")}
-                >
-                  <Mail className="h-5 w-5" />
-                </a>
+            ) : (
+              <div>
+                <div className="relative h-64">
+                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                </div>
+                <CardContent className="p-6 space-y-4">
+                  <div>
+                    <h3 className="text-xl font-bold">{member.name}</h3>
+                    <p className="text-blue-600 dark:text-blue-400">{member.role}</p>
+                  </div>
+                  <p className="text-muted-foreground text-sm">{member.bio}</p>
+                  <div className="flex gap-2">
+                    <a
+                      href={member.social.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.github")}
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={member.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.linkedin")}
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+                    <a
+                      href={`mailto:${member.social.email}`}
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={t("teamPage.social.email")}
+                    >
+                      <Mail className="h-5 w-5" />
+                    </a>
+                  </div>
+                </CardContent>
               </div>
-            </CardContent>
+            )}
           </Card>
         ))}
       </section>
