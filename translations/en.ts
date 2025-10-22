@@ -22,7 +22,7 @@ export const en = {
     deliveringExcellence: "Delivering excellence across industries",
   },
 
-  services: {
+  servicesPage: {
     pageTitle: "Our Services",
     pageDescription:
       "End-to-end digital services from our Rwanda-based experts covering custom software, web and mobile platforms, AI engineering, cybersecurity, and cloud modernisation.",
@@ -260,7 +260,7 @@ export const en = {
   },
 
   // About page translations
-  about: {
+  aboutPage: {
     title: "About Mirror Corporation",
     subtitle:
       "Where innovation meets integrity. Founded in Kigali, Rwanda with a vision to reflect and amplify excellence across industries.",
@@ -304,7 +304,7 @@ export const en = {
   },
 
   // Team page translations
-  team: {
+  teamPage: {
     title: "Our Team",
     subtitle:
       "Meet the talented individuals behind Mirror Corporation - a diverse group of innovators, problem-solvers, and technology enthusiasts.",
@@ -374,6 +374,16 @@ export const en = {
         role: "Lead Data Scientist",
         bio: "Sophia works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
       },
+      rukundo: {
+        name: "Rukundo Joseph",
+        role: "Social Media Manager",
+        bio: "A creative professional with expertise in social media strategy and digital marketing. Joseph helps build our brand presence across various social platforms and engages with our community.",
+      },
+      arnoud: {
+        name: "Arnoud Kigenza",
+        role: "Digital Marketing Specialist",
+        bio: "A results-driven marketing professional with extensive experience in digital campaigns and brand development. Arnoud focuses on driving growth and expanding our market reach.",
+      },
     },
     joinUs: {
       title: "Join Our Team",
@@ -388,7 +398,7 @@ export const en = {
   },
 
   // Portfolio page translations
-  portfolio: {
+  portfolioPage: {
     title: "Our Portfolio",
     subtitle: "Showcasing our successful projects and the transformative solutions we've delivered for our clients.",
     viewProject: "View Project",
@@ -450,7 +460,7 @@ export const en = {
   },
 
   // Blog page translations
-  blog: {
+  blogPage: {
     title: "Our Blog",
     subtitle: "Insights, trends, and thought leadership in technology, software development, and digital innovation.",
     posts: {
@@ -513,7 +523,7 @@ export const en = {
   },
 
   // Contact page translations
-  contact: {
+  contactPage: {
     title: "Contact Us",
     subtitle: "Connect with our Kigali-based team to discuss your project, partnership, or technology roadmap.",
     form: {

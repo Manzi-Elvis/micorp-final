@@ -21,7 +21,7 @@ export const es = {
     deliveringExcellence: "Entregando excelencia en todas las industrias",
   },
 
-  services: {
+  servicesPage: {
     pageTitle: "Nuestros Servicios",
     pageDescription: "Soluciones tecnológicas integrales diseñadas para transformar su negocio e impulsar la innovación.",
     sectionTitle: "Nuestros Servicios",
@@ -262,7 +262,7 @@ export const es = {
   },
 
   // About page translations
-  about: {
+  aboutPage: {
     title: "Acerca de Mirror Corporation",
     subtitle:
       "Donde la innovación se encuentra con la integridad. Fundada con una visión de reflejar y amplificar la excelencia en todas las industrias.",
@@ -306,7 +306,7 @@ export const es = {
   },
 
   // Team page translations
-  team: {
+  teamPage: {
     title: "Nuestro Equipo",
     subtitle:
       "Conozca a los talentosos individuos detrás de Mirror Corporation - un grupo diverso de innovadores, solucionadores de problemas y entusiastas de la tecnología.",
@@ -376,6 +376,16 @@ export const es = {
         role: "Líder de Data Scientist",
         bio: "Sophia trabaja en estrecha colaboración con nuestros clientes para asegurar que sus necesidades sean satisfechas y obtengan el máximo valor de nuestras soluciones.",
       },
+      rukundo: {
+        name: "Rukundo Joseph",
+        role: "Gerente de Redes Sociales",
+        bio: "Un profesional creativo con experiencia en estrategia de redes sociales y marketing digital. Joseph ayuda a construir nuestra presencia de marca en varias plataformas sociales y se involucra con nuestra comunidad.",
+      },
+      arnoud: {
+        name: "Arnoud Kigenza",
+        role: "Especialista en Marketing Digital",
+        bio: "Un profesional de marketing orientado a resultados con amplia experiencia en campañas digitales y desarrollo de marca. Arnoud se enfoca en impulsar el crecimiento y expandir nuestro alcance de mercado.",
+      },
     },
     joinUs: {
       title: "Únase a Nuestro Equipo",
@@ -390,7 +400,7 @@ export const es = {
   },
 
   // Portfolio page translations
-  portfolio: {
+  portfolioPage: {
     title: "Nuestro Portafolio",
     subtitle: "Mostrando nuestros proyectos exitosos y las soluciones transformadoras que hemos entregado a nuestros clientes.",
     viewProject: "Ver Proyecto",
@@ -451,7 +461,7 @@ export const es = {
   },
 
   // Blog page translations
-  blog: {
+  blogPage: {
     title: "Nuestro Blog",
     subtitle: "Perspectivas, tendencias y liderazgo de pensamiento en tecnología, desarrollo de software e innovación digital.",
     posts: {
@@ -514,7 +524,7 @@ export const es = {
   },
 
   // Contact page translations
-  contact: {
+  contactPage: {
     title: "Contáctenos",
     subtitle: "¿Tiene una pregunta o quiere discutir un proyecto? Nos encantaría escuchar de usted.",
     form: {

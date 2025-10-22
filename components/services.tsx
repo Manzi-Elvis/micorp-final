@@ -13,43 +13,43 @@ export default function Services() {
 
   const services = [
     {
-      title: t("services.customSoftware.title"),
-      description: t("services.customSoftware.description"),
+      title: t("servicesPage.customSoftware.title"),
+      description: t("servicesPage.customSoftware.description"),
       icon: <Code className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.webDevelopment.title"),
-      description: t("services.webDevelopment.description"),
+      title: t("servicesPage.webDevelopment.title"),
+      description: t("servicesPage.webDevelopment.description"),
       icon: <Globe className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.mobileDevelopment.title"),
-      description: t("services.mobileDevelopment.description"),
+      title: t("servicesPage.mobileDevelopment.title"),
+      description: t("servicesPage.mobileDevelopment.description"),
       icon: <Smartphone className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.databaseSolutions.title"),
-      description: t("services.databaseSolutions.description"),
+      title: t("servicesPage.databaseSolutions.title"),
+      description: t("servicesPage.databaseSolutions.description"),
       icon: <Database className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.dataAnalytics.title"),
-      description: t("services.dataAnalytics.description"),
+      title: t("servicesPage.dataAnalytics.title"),
+      description: t("servicesPage.dataAnalytics.description"),
       icon: <LineChart className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.cybersecurity.title"),
-      description: t("services.cybersecurity.description"),
+      title: t("servicesPage.cybersecurity.title"),
+      description: t("servicesPage.cybersecurity.description"),
       icon: <ShieldCheck className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.cloudServices.title"),
-      description: t("services.cloudServices.description"),
+      title: t("servicesPage.cloudServices.title"),
+      description: t("servicesPage.cloudServices.description"),
       icon: <Cloud className="h-6 w-6 text-blue-600" />,
     },
     {
-      title: t("services.aiMl.title"),
-      description: t("services.aiMl.description"),
+      title: t("servicesPage.aiMl.title"),
+      description: t("servicesPage.aiMl.description"),
       icon: <Cpu className="h-6 w-6 text-blue-600" />,
     },
   ]
@@ -57,8 +57,8 @@ export default function Services() {
   return (
     <section className="container px-4 py-16" ref={ref}>
       <div className="text-center space-y-4 mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">{t("services.sectionTitle")}</h2>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t("services.sectionSubtitle")}</p>
+        <h2 className="text-3xl md:text-4xl font-bold">{t("servicesPage.sectionTitle")}</h2>
+        <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{t("servicesPage.sectionSubtitle")}</p>
       </div>
 
       <div

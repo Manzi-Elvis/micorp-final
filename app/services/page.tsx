@@ -11,81 +11,81 @@ export default function ServicesPage() {
 
   const services = [
     {
-      title: t("services.customSoftware.title"),
-      description: t("services.customSoftware.description"),
+      title: t("servicesPage.customSoftware.title"),
+      description: t("servicesPage.customSoftware.description"),
       icon: <Code className="h-6 w-6 text-blue-600" />,
-      tags: [t("services.tags.enterprise"), t("services.tags.workflow"), t("services.tags.integration")],
+      tags: [t("servicesPage.tags.enterprise"), t("servicesPage.tags.workflow"), t("servicesPage.tags.integration")],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "custom-software",
     },
     {
-      title: t("services.webDevelopment.title"),
-      description: t("services.webDevelopment.description"),
+      title: t("servicesPage.webDevelopment.title"),
+      description: t("servicesPage.webDevelopment.description"),
       icon: <Globe className="h-6 w-6 text-blue-600" />,
       tags: [
-        t("services.tags.frontend"),
-        t("services.tags.backend"),
-        t("services.tags.ecommerce"),
-        t("services.tags.cms"),
+        t("servicesPage.tags.frontend"),
+        t("servicesPage.tags.backend"),
+        t("servicesPage.tags.ecommerce"),
+        t("servicesPage.tags.cms"),
       ],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "web-development",
     },
     {
-      title: t("services.mobileDevelopment.title"),
-      description: t("services.mobileDevelopment.description"),
+      title: t("servicesPage.mobileDevelopment.title"),
+      description: t("servicesPage.mobileDevelopment.description"),
       icon: <Smartphone className="h-6 w-6 text-blue-600" />,
       tags: [
-        t("services.tags.ios"),
-        t("services.tags.android"),
-        t("services.tags.reactNative"),
-        t("services.tags.flutter"),
+        t("servicesPage.tags.ios"),
+        t("servicesPage.tags.android"),
+        t("servicesPage.tags.reactNative"),
+        t("servicesPage.tags.flutter"),
       ],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "mobile-development",
     },
     {
-      title: t("services.databaseSolutions.title"),
-      description: t("services.databaseSolutions.description"),
+      title: t("servicesPage.databaseSolutions.title"),
+      description: t("servicesPage.databaseSolutions.description"),
       icon: <Database className="h-6 w-6 text-blue-600" />,
       tags: [
-        t("services.tags.sql"),
-        t("services.tags.nosql"),
-        t("services.tags.migration"),
-        t("services.tags.performance"),
+        t("servicesPage.tags.sql"),
+        t("servicesPage.tags.nosql"),
+        t("servicesPage.tags.migration"),
+        t("servicesPage.tags.performance"),
       ],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "database",
     },
     {
-      title: t("services.dataAnalytics.title"),
-      description: t("services.dataAnalytics.description"),
+      title: t("servicesPage.dataAnalytics.title"),
+      description: t("servicesPage.dataAnalytics.description"),
       icon: <LineChart className="h-6 w-6 text-blue-600" />,
-      tags: [t("services.tags.bi"), t("services.tags.predictive"), t("services.tags.visualization")],
+      tags: [t("servicesPage.tags.bi"), t("servicesPage.tags.predictive"), t("servicesPage.tags.visualization")],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "analytics",
     },
     {
-      title: t("services.cybersecurity.title"),
-      description: t("services.cybersecurity.description"),
+      title: t("servicesPage.cybersecurity.title"),
+      description: t("servicesPage.cybersecurity.description"),
       icon: <ShieldCheck className="h-6 w-6 text-blue-600" />,
-      tags: [t("services.tags.security"), t("services.tags.penetration"), t("services.tags.compliance")],
+      tags: [t("servicesPage.tags.security"), t("servicesPage.tags.penetration"), t("servicesPage.tags.compliance")],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "cybersecurity",
     },
     {
-      title: t("services.cloudServices.title"),
-      description: t("services.cloudServices.description"),
+      title: t("servicesPage.cloudServices.title"),
+      description: t("servicesPage.cloudServices.description"),
       icon: <Cloud className="h-6 w-6 text-blue-600" />,
-      tags: [t("services.tags.aws"), t("services.tags.azure"), t("services.tags.google"), t("services.tags.migration")],
+      tags: [t("servicesPage.tags.aws"), t("servicesPage.tags.azure"), t("servicesPage.tags.google"), t("servicesPage.tags.migration")],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "cloud",
     },
     {
-      title: t("services.aiMl.title"),
-      description: t("services.aiMl.description"),
+      title: t("servicesPage.aiMl.title"),
+      description: t("servicesPage.aiMl.description"),
       icon: <Cpu className="h-6 w-6 text-blue-600" />,
-      tags: [t("services.tags.models"), t("services.tags.nlp"), t("services.tags.vision")],
+      tags: [t("servicesPage.tags.models"), t("servicesPage.tags.nlp"), t("servicesPage.tags.vision")],
       image: "/placeholder.svg?height=300&width=400",
       anchor: "ai-ml",
     },
@@ -94,8 +94,8 @@ export default function ServicesPage() {
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
       <section className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("services.pageTitle")}</h1>
-        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("services.pageDescription")}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("servicesPage.pageTitle")}</h1>
+        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("servicesPage.pageDescription")}</p>
       </section>
 
       <section className="grid md:grid-cols-2 gap-8">
@@ -134,45 +134,45 @@ export default function ServicesPage() {
       <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold">{t("services.approach.title")}</h2>
-            <p className="text-lg text-muted-foreground">{t("services.approach.description")}</p>
+            <h2 className="text-3xl font-bold">{t("servicesPage.approach.title")}</h2>
+            <p className="text-lg text-muted-foreground">{t("servicesPage.approach.description")}</p>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
                   <div className="h-2 w-2 rounded-full bg-blue-600"></div>
                 </div>
-                <span className="text-muted-foreground">{t("services.approach.step1")}</span>
+                <span className="text-muted-foreground">{t("servicesPage.approach.step1")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
                   <div className="h-2 w-2 rounded-full bg-blue-600"></div>
                 </div>
-                <span className="text-muted-foreground">{t("services.approach.step2")}</span>
+                <span className="text-muted-foreground">{t("servicesPage.approach.step2")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
                   <div className="h-2 w-2 rounded-full bg-blue-600"></div>
                 </div>
-                <span className="text-muted-foreground">{t("services.approach.step3")}</span>
+                <span className="text-muted-foreground">{t("servicesPage.approach.step3")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
                   <div className="h-2 w-2 rounded-full bg-blue-600"></div>
                 </div>
-                <span className="text-muted-foreground">{t("services.approach.step4")}</span>
+                <span className="text-muted-foreground">{t("servicesPage.approach.step4")}</span>
               </li>
               <li className="flex items-start gap-2">
                 <div className="rounded-full bg-blue-100 dark:bg-blue-900/30 p-1 mt-1">
                   <div className="h-2 w-2 rounded-full bg-blue-600"></div>
                 </div>
-                <span className="text-muted-foreground">{t("services.approach.step5")}</span>
+                <span className="text-muted-foreground">{t("servicesPage.approach.step5")}</span>
               </li>
             </ul>
           </div>
           <div className="relative h-[300px] rounded-xl overflow-hidden">
             <Image
               src="/placeholder.svg?height=600&width=800"
-              alt={t("services.approach.imageAlt")}
+              alt={t("servicesPage.approach.imageAlt")}
               fill
               className="object-cover"
             />

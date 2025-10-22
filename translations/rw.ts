@@ -21,7 +21,7 @@ export const rw = {
     deliveringExcellence: "Dushyiraho ubwiza mu matsinda yose",
   },
 
-  services: {
+  servicesPage: {
     pageTitle: "Serivisi Zacu",
     pageDescription: "Ibisubizo by'ikoranabuhanga byuzuye byateguwe guhindura ubucuruzi bwawe kandi gutera ubwumenyi.",
     sectionTitle: "Serivisi Zacu",
@@ -260,7 +260,7 @@ export const rw = {
   },
 
   // About page translations
-  about: {
+  aboutPage: {
     title: "Ibyerekeye Mirror Corporation",
     subtitle:
       "Aho ubwumenyi buhura na ubwizigame. Yashinzwe hamwe n'intego yo kugaragaza no kubyongera ubwiza mu matsinda yose.",
@@ -304,7 +304,7 @@ export const rw = {
   },
 
   // Team page translations
-  team: {
+  teamPage: {
     title: "Ishyirahamwe Ryawe",
     subtitle:
       "Menya abantu bafite ubumenyi bakiriye Mirror Corporation - ishyirahamwe rya bagize bafite ubwumenyi, abakemura ibibazo n'abafite ubwumenyi bw'ikoranabuhanga.",
@@ -374,6 +374,16 @@ export const rw = {
         role: "Umyobozi wa Data Scientist",
         bio: "Sophia akora hamwe na baguzi bacu neza kugira ngo amenye ko ibikenewe byabo bihabwa kandi bafata agaciro kuri ibisubizo byacu.",
       },
+      rukundo: {
+        name: "Rukundo Joseph",
+        role: "Umucyozi w'Imbuga Nkoranyambaga",
+        bio: "Umukorera w'ubwumenyi w'ubwumenyi bw'ikoranabuhanga n'ubwumenyi bw'ikoranabuhanga. Joseph atuma dushyiraho ubwumenyi bwacu bw'ikoranabuhanga mu matsinda yose y'ikoranabuhanga kandi akora hamwe n'ishyirahamwe ryawe.",
+      },
+      arnoud: {
+        name: "Arnoud Kigenza",
+        role: "Umukorera w'Ubwumenyi bw'Ikoranabuhanga",
+        bio: "Umukorera w'ubwumenyi bw'ikoranabuhanga w'ubwumenyi bw'ikoranabuhanga w'ubwumenyi bw'ikoranabuhanga n'ubwumenyi bw'ikoranabuhanga. Arnoud yihangana ku kwongera no kwongera ubwumenyi bwacu bw'ikoranabuhanga.",
+      },
     },
     joinUs: {
       title: "Shyira Hamwe n'Ishyirahamwe Ryawe",
@@ -388,7 +398,7 @@ export const rw = {
   },
 
   // Portfolio page translations
-  portfolio: {
+  portfolioPage: {
     title: "Portfolio Yacu",
     subtitle: "Kwerekana ibikorwa byacu byatsinze kandi ibisubizo bihindura twashyiriyeho baguzi bacu.",
     viewProject: "Reba Igikorwa",
@@ -449,7 +459,7 @@ export const rw = {
   },
 
   // Blog page translations
-  blog: {
+  blogPage: {
     title: "Blog Yacu",
     subtitle: "Amakuru, ibyongerwa n'ubuyobozi bw'ubwumenyi mu ikoranabuhanga, gukora software no ubwumenyi bw'ikoranabuhanga.",
     posts: {
@@ -512,7 +522,7 @@ export const rw = {
   },
 
   // Contact page translations
-  contact: {
+  contactPage: {
     title: "Twandikire",
     subtitle: "Ufite ikibazo cyangwa ushaka kuvugana ibyerekeye igikorwa? Turakunda kumva ibyerekeye wawe.",
     form: {

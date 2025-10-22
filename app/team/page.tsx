@@ -11,9 +11,9 @@ export default function TeamPage() {
 
   const teamMembers = [
     {
-      name: t("team.members.chaste.name"),
-      role: t("team.members.chaste.role"),
-      bio: t("team.members.chaste.bio"),
+      name: t("teamPage.members.chaste.name"),
+      role: t("teamPage.members.chaste.role"),
+      bio: t("teamPage.members.chaste.bio"),
       image: "/members/chaste.jpg?height=400&width=300",
       social: {
         github: "https://github.com/Djsensei1/",
@@ -22,9 +22,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.thierry.name"),
-      role: t("team.members.thierry.role"),
-      bio: t("team.members.thierry.bio"),
+      name: t("teamPage.members.thierry.name"),
+      role: t("teamPage.members.thierry.role"),
+      bio: t("teamPage.members.thierry.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "https://github.com/Djsensei1/",
@@ -33,9 +33,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.pazzo.name"),
-      role: t("team.members.pazzo.role"),
-      bio: t("team.members.pazzo.bio"),
+      name: t("teamPage.members.pazzo.name"),
+      role: t("teamPage.members.pazzo.role"),
+      bio: t("teamPage.members.pazzo.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -44,9 +44,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.paccy.name"),
-      role: t("team.members.paccy.role"),
-      bio: t("team.members.paccy.bio"),
+      name: t("teamPage.members.paccy.name"),
+      role: t("teamPage.members.paccy.role"),
+      bio: t("teamPage.members.paccy.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -55,9 +55,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.queen.name"),
-      role: t("team.members.queen.role"),
-      bio: t("team.members.queen.bio"),
+      name: t("teamPage.members.queen.name"),
+      role: t("teamPage.members.queen.role"),
+      bio: t("teamPage.members.queen.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -66,9 +66,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.josh.name"),
-      role: t("team.members.josh.role"),
-      bio: t("team.members.josh.bio"),
+      name: t("teamPage.members.josh.name"),
+      role: t("teamPage.members.josh.role"),
+      bio: t("teamPage.members.josh.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -77,9 +77,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.amina.name"),
-      role: t("team.members.amina.role"),
-      bio: t("team.members.amina.bio"),
+      name: t("teamPage.members.amina.name"),
+      role: t("teamPage.members.amina.role"),
+      bio: t("teamPage.members.amina.bio"),
       image: "/members/amina.jpg?height=400&width=300",
       social: {
         github: "#",
@@ -88,9 +88,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.elvis.name"),
-      role: t("team.members.elvis.role"),
-      bio: t("team.members.elvis.bio"),
+      name: t("teamPage.members.elvis.name"),
+      role: t("teamPage.members.elvis.role"),
+      bio: t("teamPage.members.elvis.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -99,9 +99,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.faylinn.name"),
-      role: t("team.members.faylinn.role"),
-      bio: t("team.members.faylinn.bio"),
+      name: t("teamPage.members.faylinn.name"),
+      role: t("teamPage.members.faylinn.role"),
+      bio: t("teamPage.members.faylinn.bio"),
       image: "/members/faylinn.png?height=400&width=300",
       social: {
         github: "#",
@@ -110,9 +110,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.aliza.name"),
-      role: t("team.members.aliza.role"),
-      bio: t("team.members.aliza.bio"),
+      name: t("teamPage.members.aliza.name"),
+      role: t("teamPage.members.aliza.role"),
+      bio: t("teamPage.members.aliza.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -121,9 +121,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.danny.name"),
-      role: t("team.members.danny.role"),
-      bio: t("team.members.danny.bio"),
+      name: t("teamPage.members.danny.name"),
+      role: t("teamPage.members.danny.role"),
+      bio: t("teamPage.members.danny.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -132,9 +132,9 @@ export default function TeamPage() {
       },
     },
     {
-      name: t("team.members.didier.name"),
-      role: t("team.members.didier.role"),
-      bio: t("team.members.didier.bio"),
+      name: t("teamPage.members.didier.name"),
+      role: t("teamPage.members.didier.role"),
+      bio: t("teamPage.members.didier.bio"),
       image: "/placeholder.svg?height=400&width=300",
       social: {
         github: "#",
@@ -142,13 +142,35 @@ export default function TeamPage() {
         email: "ai@micorp.pro",
       },
     },
+    {
+      name: t("teamPage.members.rukundo.name"),
+      role: t("teamPage.members.rukundo.role"),
+      bio: t("teamPage.members.rukundo.bio"),
+      image: "/placeholder.svg?height=400&width=300",
+      social: {
+        github: "#",
+        linkedin: "#",
+        email: "social@micorp.pro",
+      },
+    },
+    {
+      name: t("teamPage.members.arnoud.name"),
+      role: t("teamPage.members.arnoud.role"),
+      bio: t("teamPage.members.arnoud.bio"),
+      image: "/placeholder.svg?height=400&width=300",
+      social: {
+        github: "#",
+        linkedin: "#",
+        email: "marketing@micorp.pro",
+      },
+    },
   ]
 
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
       <section className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("team.title")}</h1>
-        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("team.subtitle")}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("teamPage.title")}</h1>
+        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("teamPage.subtitle")}</p>
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -169,7 +191,7 @@ export default function TeamPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("team.social.github")}
+                  aria-label={t("teamPage.social.github")}
                 >
                   <Github className="h-5 w-5" />
                 </a>
@@ -178,14 +200,14 @@ export default function TeamPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("team.social.linkedin")}
+                  aria-label={t("teamPage.social.linkedin")}
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
                   href={`mailto:${member.social.email}`}
                   className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={t("team.social.email")}
+                  aria-label={t("teamPage.social.email")}
                 >
                   <Mail className="h-5 w-5" />
                 </a>
@@ -196,12 +218,12 @@ export default function TeamPage() {
       </section>
 
       <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12 text-center space-y-6">
-        <h2 className="text-3xl font-bold">{t("team.joinUs.title")}</h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("team.joinUs.description")}</p>
+        <h2 className="text-3xl font-bold">{t("teamPage.joinUs.title")}</h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("teamPage.joinUs.description")}</p>
         <div className="flex justify-center gap-4">
-          <Badge className="px-3 py-2 text-base">{t("team.joinUs.positions.developer")}</Badge>
-          <Badge className="px-3 py-2 text-base">{t("team.joinUs.positions.designer")}</Badge>
-          <Badge className="px-3 py-2 text-base">{t("team.joinUs.positions.dataScientist")}</Badge>
+          <Badge className="px-3 py-2 text-base">{t("teamPage.joinUs.positions.developer")}</Badge>
+          <Badge className="px-3 py-2 text-base">{t("teamPage.joinUs.positions.designer")}</Badge>
+          <Badge className="px-3 py-2 text-base">{t("teamPage.joinUs.positions.dataScientist")}</Badge>
         </div>
       </section>
     </div>

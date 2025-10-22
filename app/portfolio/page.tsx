@@ -13,24 +13,24 @@ export default function PortfolioPage() {
 
   const projects = [
     {
-      title: t("portfolio.projects.watch.title"),
-      description: t("portfolio.projects.watch.description"),
+      title: t("portfolioPage.projects.watch.title"),
+      description: t("portfolioPage.projects.watch.description"),
       image: "/portfolio/watch.png?height=600&width=800",
-      tags: [t("portfolio.tags.healthcare"), t("portfolio.tags.webApp"), t("portfolio.tags.mobileApp")],
+      tags: [t("portfolioPage.tags.healthcare"), t("portfolioPage.tags.webApp"), t("portfolioPage.tags.mobileApp")],
       link: "#",
     },
     {
-      title: t("portfolio.projects.yup.title"),
-      description: t("portfolio.projects.yup.description"),
+      title: t("portfolioPage.projects.yup.title"),
+      description: t("portfolioPage.projects.yup.description"),
       image: "/portfolio/yup.png?height=600&width=800",
-      tags: [t("portfolio.tags.dataAnalytics"), t("portfolio.tags.iot"), t("portfolio.tags.dashboard")],
+      tags: [t("portfolioPage.tags.dataAnalytics"), t("portfolioPage.tags.iot"), t("portfolioPage.tags.dashboard")],
       link: "#",
     },
     {
-      title: t("portfolio.projects.finEdge.title"),
-      description: t("portfolio.projects.finEdge.description"),
+      title: t("portfolioPage.projects.finEdge.title"),
+      description: t("portfolioPage.projects.finEdge.description"),
       image: "/portfolio/sms.png?height=600&width=800",
-      tags: [t("portfolio.tags.finance"), t("portfolio.tags.realtime"), t("portfolio.tags.security")],
+      tags: [t("portfolioPage.tags.finance"), t("portfolioPage.tags.realtime"), t("portfolioPage.tags.security")],
       link: "#",
     },
   ]
@@ -38,8 +38,8 @@ export default function PortfolioPage() {
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
       <section className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("portfolio.title")}</h1>
-        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("portfolio.subtitle")}</p>
+        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("portfolioPage.title")}</h1>
+        <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">{t("portfolioPage.subtitle")}</p>
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
               </div>
               <Button variant="outline" size="sm" asChild>
                 <Link href={project.link} className="flex items-center gap-1">
-                  {t("portfolio.viewProject")} <ExternalLink className="h-4 w-4" />
+                  {t("portfolioPage.viewProject")} <ExternalLink className="h-4 w-4" />
                 </Link>
               </Button>
             </CardContent>
@@ -78,10 +78,10 @@ export default function PortfolioPage() {
       </section>
 
       <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12 text-center space-y-6">
-        <h2 className="text-3xl font-bold">{t("portfolio.cta.title")}</h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("portfolio.cta.description")}</p>
+        <h2 className="text-3xl font-bold">{t("portfolioPage.cta.title")}</h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{t("portfolioPage.cta.description")}</p>
         <Button size="lg" asChild>
-          <Link href="/request-job">{t("portfolio.cta.button")}</Link>
+          <Link href="/request-job">{t("portfolioPage.cta.button")}</Link>
         </Button>
       </section>
     </div>
