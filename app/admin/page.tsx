@@ -34,6 +34,7 @@ import {
   Palette,
 } from "lucide-react"
 import { supabase, type JobRequest, type ContactSubmission } from "@/lib/supabase"
+import { Loading } from "@/components/ui/loading"
 import { toast } from "sonner"
 import QRCode from "qrcode"
 import { submitToIndexNow, submitAllSitePagesToIndexNow, type IndexNowSubmissionResult } from "@/lib/indexnow"
@@ -69,6 +70,7 @@ export default function AdminPage() {
   const [customUrls, setCustomUrls] = useState("")
   const [submittingIndexNow, setSubmittingIndexNow] = useState(false)
   const [indexNowResult, setIndexNowResult] = useState<IndexNowSubmissionResult | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   // Check for existing session on component mount
   useEffect(() => {
@@ -134,9 +136,11 @@ export default function AdminPage() {
 
       if (contactsError) throw contactsError
       setContactSubmissions(contacts || [])
+      setIsLoading(false)
     } catch (error) {
       console.error("Error fetching data:", error)
       toast.error("Failed to fetch data")
+      setIsLoading(false)
     } finally {
       setLoading(false)
     }

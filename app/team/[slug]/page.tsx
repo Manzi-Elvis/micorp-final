@@ -230,7 +230,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         name: t("teamPage.members.josh.name"),
         role: t("teamPage.members.josh.role"),
         bio: t("teamPage.members.josh.bio"),
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/members/joshua.JPG",
         location: "Kigali, Rwanda",
         joinDate: "2024",
         skills: ["Data Science", "Python", "Machine Learning", "Statistics", "Data Visualization"],

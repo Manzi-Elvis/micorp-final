@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -14,6 +14,7 @@ import { Briefcase, DollarSign, FileText, CheckCircle, ArrowRight } from 'lucide
 import { useTranslations } from "@/hooks/use-translations"
 import { supabase } from "@/lib/supabase"
 import { toast } from "sonner"
+import { Loading } from "@/components/ui/loading"
 
 export default function RequestJobPage() {
   const { t } = useTranslations()
@@ -299,7 +300,14 @@ export default function RequestJobPage() {
               </div>
 
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? t("requestProject.submitting") : t("requestProject.submitProjectRequest")}
+                {isSubmitting ? (
+                  <div className="flex items-center gap-2">
+                    <Loading size="sm" />
+                    {t("requestProject.submitting")}
+                  </div>
+                ) : (
+                  t("requestProject.submitProjectRequest")
+                )}
               </Button>
             </form>
           </CardContent>

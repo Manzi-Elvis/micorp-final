@@ -1,14 +1,26 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 import { useTranslations } from "@/hooks/use-translations"
+import { TeamCardSkeleton } from "@/components/ui/loading"
 
 export default function TeamPage() {
   const { t } = useTranslations()
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   const teamMembers = [
     {
@@ -76,7 +88,7 @@ export default function TeamPage() {
       name: t("teamPage.members.josh.name"),
       role: t("teamPage.members.josh.role"),
       bio: t("teamPage.members.josh.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/joshua.JPG?height=400&width=300",
       social: {
         github: "#",
         linkedin: "#",
@@ -189,7 +201,12 @@ export default function TeamPage() {
       </section>
 
       <section className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {teamMembers.map((member, index) => (
+        {isLoading ? (
+          Array.from({ length: 8 }).map((_, index) => (
+            <TeamCardSkeleton key={index} />
+          ))
+        ) : (
+          teamMembers.map((member, index) => (
           <Card key={index} className="overflow-hidden transition-all hover:shadow-md group cursor-pointer">
             {member.slug ? (
               <div>
@@ -278,7 +295,8 @@ export default function TeamPage() {
               </div>
             )}
           </Card>
-        ))}
+          ))
+        )}
       </section>
 
       <section className="bg-blue-50 dark:bg-blue-950/30 rounded-xl p-8 md:p-12 text-center space-y-6">
