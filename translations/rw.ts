@@ -581,9 +581,9 @@ export const rw = {
     },
   },
 
-  // Request Job page translations
-  requestJob: {
-    title: "Saba Akazi",
+  // Request Project page translations
+  requestProject: {
+    title: "Saba Igikorwa",
     subtitle: "Tubwire ibyerekeye igikorwa cyawe kandi tuzasubiraho hamwe n'intego",
     projectDetails: "Ibintu by'Igikorwa",
     projectDetailsDescription: "Nyamuneka tubwire ibintu byinshi uko bishoboka ibyerekeye ibikenewe by'igikorwa cyawe",
@@ -610,7 +610,7 @@ export const rw = {
     budgetRangePlaceholder: "Hitamo uko amafaranga ahinguka",
     expectedTimeline: "Amasaha Yiteganyijwe",
     expectedTimelinePlaceholder: "Hitamo amasaha",
-    submitJobRequest: "Ohereza Gusaba Akazi",
+    submitProjectRequest: "Ohereza Gusaba Igikorwa",
     submitting: "Bihagaze...",
     projectTypes: {
       webDevelopment: "Gukora Internet",
@@ -657,7 +657,7 @@ export const rw = {
     composeEmail: "Andika Imeri",
     customizeQR: "Hindura QR",
     qrCode: "Kode QR",
-    jobRequests: "Gusaba Akazi",
+    projectRequests: "Gusaba Ibigorwa",
     contactMessages: "Ubutumwa bwo Twandikire",
     emailDialog: {
       title: "Andika Imeri",

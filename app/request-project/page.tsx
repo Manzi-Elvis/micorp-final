@@ -92,9 +92,9 @@ export default function RequestJobPage() {
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
       <section className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">Request a Job</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-center">{t("requestProject.title")}</h1>
         <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">
-          Tell us about your project and we'll get back to you with a proposal
+          {t("requestProject.subtitle")}
         </p>
       </section>
 
@@ -104,7 +104,7 @@ export default function RequestJobPage() {
             <CheckCircle className="h-4 w-4 text-green-600" />
             <AlertDescription className="text-green-800">
               <div className="space-y-2">
-                <p className="font-semibold">Job request submitted successfully!</p>
+                <p className="font-semibold">Project request submitted successfully!</p>
                 <p>Thank you for choosing Micorp. We've received your project details and our team will review them carefully.</p>
                 <div className="flex items-center gap-2 text-sm">
                   <ArrowRight className="h-4 w-4" />
@@ -299,7 +299,7 @@ export default function RequestJobPage() {
               </div>
 
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Submit Job Request"}
+                {isSubmitting ? t("requestProject.submitting") : t("requestProject.submitProjectRequest")}
               </Button>
             </form>
           </CardContent>

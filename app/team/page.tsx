@@ -160,7 +160,7 @@ export default function TeamPage() {
       name: t("teamPage.members.rukundo.name"),
       role: t("teamPage.members.rukundo.role"),
       bio: t("teamPage.members.rukundo.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/joe.jpg?height=400&width=300",
       social: {
         github: "#",
         linkedin: "#",
@@ -172,7 +172,7 @@ export default function TeamPage() {
       name: t("teamPage.members.arnoud.name"),
       role: t("teamPage.members.arnoud.role"),
       bio: t("teamPage.members.arnoud.bio"),
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/members/kigenza.JPG?height=400&width=300",
       social: {
         github: "#",
         linkedin: "#",

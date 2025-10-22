@@ -582,9 +582,9 @@ export const en = {
     },
   },
 
-  // Request Job page translations
-  requestJob: {
-    title: "Request a Job",
+  // Request Project page translations
+  requestProject: {
+    title: "Request a Project",
     subtitle: "Tell us about your project and we'll get back to you with a proposal",
     projectDetails: "Project Details",
     projectDetailsDescription: "Please provide as much detail as possible about your project requirements",
@@ -611,7 +611,7 @@ export const en = {
     budgetRangePlaceholder: "Select budget range",
     expectedTimeline: "Expected Timeline",
     expectedTimelinePlaceholder: "Select timeline",
-    submitJobRequest: "Submit Job Request",
+    submitProjectRequest: "Submit Project Request",
     submitting: "Submitting...",
     projectTypes: {
       webDevelopment: "Web Development",
@@ -658,7 +658,7 @@ export const en = {
     composeEmail: "Compose Email",
     customizeQR: "Customize QR",
     qrCode: "QR Code",
-    jobRequests: "Job Requests",
+    projectRequests: "Project Requests",
     contactMessages: "Contact Messages",
     emailDialog: {
       title: "Compose Email",
@@ -677,7 +677,7 @@ export const en = {
     },
     qrDialog: {
       title: "Customize QR Code",
-      description: "Customize your job request QR code",
+      description: "Customize your project request QR code",
       qrColor: "QR Color",
       bgColor: "Background Color",
       size: "Size: {{size}}px",
@@ -685,8 +685,8 @@ export const en = {
       applyChanges: "Apply Changes",
     },
     qrDisplay: {
-      title: "Job Request QR Code",
-      description: "Share this QR code to direct people to the job request page",
+      title: "Project Request QR Code",
+      description: "Share this QR code to direct people to the project request page",
       scanToVisit: "Scan to visit: {{url}}",
       downloadQR: "Download QR Code",
     },
@@ -707,16 +707,16 @@ export const en = {
     },
     emailTemplates: {
       jobAccepted: {
-        subject: "Job Request Accepted - {{projectTitle}}",
-        message: "Hi {{clientName}},\n\nGreat news! We've reviewed your job request for \"{{projectTitle}}\" and we'd love to work with you on this project.\n\nOur team will be in touch within the next 24 hours to discuss the next steps, timeline, and provide you with a detailed proposal.\n\nThank you for choosing Micorp for your project needs.\n\nBest regards,\nThe Micorp Team",
+        subject: "Project Request Accepted - {{projectTitle}}",
+        message: "Hi {{clientName}},\n\nGreat news! We've reviewed your project request for \"{{projectTitle}}\" and we'd love to work with you on this project.\n\nOur team will be in touch within the next 24 hours to discuss the next steps, timeline, and provide you with a detailed proposal.\n\nThank you for choosing Micorp for your project needs.\n\nBest regards,\nThe Micorp Team",
       },
       jobDeclined: {
-        subject: "Job Request Update - {{projectTitle}}",
+        subject: "Project Request Update - {{projectTitle}}",
         message: "Hi {{clientName}},\n\nThank you for your interest in working with Micorp on \"{{projectTitle}}\".\n\nAfter careful consideration, we've determined that this project isn't the best fit for our current capabilities and focus areas.\n\nWe appreciate you thinking of us and wish you the best of luck with your project.\n\nBest regards,\nThe Micorp Team",
       },
       needMoreInfo: {
         subject: "Additional Information Needed - {{projectTitle}}",
-        message: "Hi {{clientName}},\n\nThank you for your job request for \"{{projectTitle}}\". We're very interested in working with you on this project.\n\nTo provide you with the most accurate proposal, we need some additional information:\n\n- [Add specific questions here]\n- [Add more questions as needed]\n\nOnce we have these details, we'll be able to provide you with a comprehensive proposal.\n\nLooking forward to hearing from you!\n\nBest regards,\nThe Micorp Team",
+        message: "Hi {{clientName}},\n\nThank you for your project request for \"{{projectTitle}}\". We're very interested in working with you on this project.\n\nTo provide you with the most accurate proposal, we need some additional information:\n\n- [Add specific questions here]\n- [Add more questions as needed]\n\nOnce we have these details, we'll be able to provide you with a comprehensive proposal.\n\nLooking forward to hearing from you!\n\nBest regards,\nThe Micorp Team",
       },
     },
   },

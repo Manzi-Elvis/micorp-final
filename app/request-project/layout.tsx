@@ -4,12 +4,12 @@ const siteUrl = "https://micorp.pro"
 const ogImage = `${siteUrl}/brand/logo.png`
 
 export const metadata: Metadata = {
-  title: "Request a Mirror Corporation - Micorp Project Inquiry",
+  title: "Request a Project - Mirror Corporation Project Inquiry",
   description:
     "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
   keywords: [
-    "request job Mirror Corporation",
-    "request job Micorp",
+    "request project Mirror Corporation",
+    "request project Micorp",
     "project inquiry",
     "custom software development",
     "web development proposal",
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
     "Rwanda software partner",
   ],
   openGraph: {
-    title: "Request a Job - Mirror Corporation Project Inquiry",
+    title: "Request a Project - Mirror Corporation Project Inquiry",
     description:
       "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
-    url: `${siteUrl}/request-job`,
+    url: `${siteUrl}/request-project`,
     siteName: "Mirror Corporation",
     images: [
       {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Request a Job - Micorp",
+        alt: "Request a Project - Micorp",
       },
     ],
     locale: "en_US",
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Request a Job - Mirror Corporation Project Inquiry",
+    title: "Request a Project - Mirror Corporation Project Inquiry",
     description:
       "Submit project requirements to Mirror Corporation for a tailored proposal covering software development, UX, AI/ML, cybersecurity, and cloud modernisation.",
     images: [ogImage],
   },
   alternates: {
-    canonical: "/request-job",
+    canonical: "/request-project",
   },
 }
 
@@ -63,7 +63,7 @@ export default function RequestJobLayout({
             "@type": "Service",
             "name": "Mirror Corporation Technology Services",
             "description": "Submit your project requirements to Mirror Corporation. Get a custom proposal for web development, mobile apps, AI/ML, cybersecurity, and other technology solutions.",
-            "url": `${siteUrl}/request-job`,
+            "url": `${siteUrl}/request-project`,
             "provider": {
               "@type": "Organization",
               "name": "Mirror Corporation",
@@ -73,7 +73,7 @@ export default function RequestJobLayout({
               "@type": "RequestAction",
               "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": `${siteUrl}/request-job`
+                "urlTemplate": `${siteUrl}/request-project`
               },
               "result": {
                 "@type": "Service"

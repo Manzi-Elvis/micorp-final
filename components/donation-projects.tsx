@@ -245,7 +245,7 @@ export default function DonationProjects() {
             </p>
             <Button variant="outline">
               <ExternalLink className="h-4 w-4 mr-2" />
-              <Link href="/request-job">Request a Project</Link>
+              <Link href="/request-project">Request a Project</Link>
             </Button>
           </CardContent>
         </Card>

@@ -101,7 +101,7 @@ export async function submitAllSitePagesToIndexNow(
     '/contact',
     '/team',
     '/donate',
-    '/request-job',
+    '/request-project',
   ];
 
   const urls = commonPages.map(page => `https://${host}${page}`);

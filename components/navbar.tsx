@@ -33,7 +33,7 @@ export default function Navbar() {
     { name: t("Portfolio"), href: "/portfolio" },
     { name: t("Team"), href: "/team" },
     { name: t("Blog"), href: "/blog" },
-    { name: t("Request"), href: "/request-job" },
+    { name: t("Request"), href: "/request-project" },
     { name: t("Contact"), href: "/contact" },
   ]
 

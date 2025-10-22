@@ -144,7 +144,7 @@ export default function AdminPage() {
 
   const generateQRCode = async () => {
     try {
-      const jobRequestUrl = `${window.location.origin}/request-job`
+      const jobRequestUrl = `${window.location.origin}/request-project`
 
       const qrDataUrl = await QRCode.toDataURL(jobRequestUrl, {
         width: qrSize,
@@ -196,7 +196,7 @@ export default function AdminPage() {
     } catch (error) {
       console.error("Error generating QR code:", error)
       // Fallback to simple QR code
-      const jobRequestUrl = `${window.location.origin}/request-job`
+      const jobRequestUrl = `${window.location.origin}/request-project`
       const fallbackQr = await QRCode.toDataURL(jobRequestUrl)
       setQrCodeUrl(fallbackQr)
     }
@@ -277,7 +277,7 @@ export default function AdminPage() {
       '/contact',
       '/team',
       '/donate',
-      '/request-job',
+      '/request-project',
     ]
     
     const urls = allPages.map(page => `https://${window.location.hostname}${page}`)
@@ -583,12 +583,12 @@ export default function AdminPage() {
                   <img src={qrCodeUrl || "/placeholder.svg"} alt="Job Request QR Code" className="border rounded-lg" />
                 )}
                 <p className="text-sm text-muted-foreground text-center">
-                  Scan to visit: {window.location.origin}/request-job
+                  Scan to visit: {window.location.origin}/request-project
                 </p>
                 <Button
                   onClick={() => {
                     const link = document.createElement("a")
-                    link.download = "micorp-job-request-qr.png"
+                    link.download = "micorp-project-request-qr.png"
                     link.href = qrCodeUrl
                     link.click()
                   }}
@@ -703,7 +703,7 @@ export default function AdminPage() {
 
       <Tabs defaultValue="jobs" className="space-y-6">
         <TabsList>
-          <TabsTrigger value="jobs">Job Requests ({jobRequests.length})</TabsTrigger>
+          <TabsTrigger value="jobs">Project Requests ({jobRequests.length})</TabsTrigger>
           <TabsTrigger value="contacts">Contact Messages ({contactSubmissions.length})</TabsTrigger>
         </TabsList>
 

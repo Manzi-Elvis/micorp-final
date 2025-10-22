@@ -583,9 +583,9 @@ export const es = {
     },
   },
 
-  // Request Job page translations
-  requestJob: {
-    title: "Solicitar un Trabajo",
+  // Request Project page translations
+  requestProject: {
+    title: "Solicitar un Proyecto",
     subtitle: "Cuéntenos sobre su proyecto y nos pondremos en contacto con una propuesta",
     projectDetails: "Detalles del Proyecto",
     projectDetailsDescription: "Por favor proporcione tantos detalles como sea posible sobre los requisitos de su proyecto",
@@ -612,7 +612,7 @@ export const es = {
     budgetRangePlaceholder: "Seleccionar rango de presupuesto",
     expectedTimeline: "Cronograma Esperado",
     expectedTimelinePlaceholder: "Seleccionar cronograma",
-    submitJobRequest: "Enviar Solicitud de Trabajo",
+    submitProjectRequest: "Enviar Solicitud de Proyecto",
     submitting: "Enviando...",
     projectTypes: {
       webDevelopment: "Desarrollo Web",
@@ -659,7 +659,7 @@ export const es = {
     composeEmail: "Redactar Correo Electrónico",
     customizeQR: "Personalizar QR",
     qrCode: "Código QR",
-    jobRequests: "Solicitudes de Trabajo",
+    projectRequests: "Solicitudes de Proyecto",
     contactMessages: "Mensajes de Contacto",
     emailDialog: {
       title: "Redactar Correo Electrónico",

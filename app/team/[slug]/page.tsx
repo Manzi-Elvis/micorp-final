@@ -100,7 +100,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         name: t("teamPage.members.rukundo.name"),
         role: t("teamPage.members.rukundo.role"),
         bio: t("teamPage.members.rukundo.bio"),
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/members/joe.jpg",
         location: "Kigali, Rwanda",
         joinDate: "2024",
         skills: ["Social Media Strategy", "Content Creation", "Digital Marketing", "Brand Management", "Analytics"],
@@ -126,7 +126,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         name: t("teamPage.members.arnoud.name"),
         role: t("teamPage.members.arnoud.role"),
         bio: t("teamPage.members.arnoud.bio"),
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/members/kigenza.JPG",
         location: "Kigali, Rwanda",
         joinDate: "2024",
         skills: ["Digital Marketing", "SEO/SEM", "Email Marketing", "Analytics", "Campaign Management"],
@@ -259,14 +259,14 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         image: "/members/amina.jpg",
         location: "Kigali, Rwanda",
         joinDate: "2024",
-        skills: ["Full-Stack Development", "React", "Node.js", "Database Design", "API Development"],
-        experience: "5+ years in full-stack development",
-        education: "Computer Science",
+        skills: ["Full-Stack Development", "React", "Database Design", "API Development", "Tailwind CSS", "TypeScript"],
+        experience: "2+ years in full-stack development",
+        education: "Software Development",
         achievements: ["Built scalable applications", "Led development teams", "Optimized system performance"],
         social: {
           github: "#",
           linkedin: "#",
-          email: "projects@micorp.pro"
+          email: "aminafaida1000@gmail.com"
         },
         projects: [
           {

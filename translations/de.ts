@@ -586,9 +586,9 @@ export const de = {
     },
   },
 
-  // Request Job page translations
-  requestJob: {
-    title: "Job anfordern",
+  // Request Project page translations
+  requestProject: {
+    title: "Projekt anfordern",
     subtitle: "Erzählen Sie uns von Ihrem Projekt und wir melden uns mit einem Vorschlag bei Ihnen",
     projectDetails: "Projektdetails",
     projectDetailsDescription: "Bitte geben Sie so viele Details wie möglich über Ihre Projektanforderungen an",
@@ -615,7 +615,7 @@ export const de = {
     budgetRangePlaceholder: "Budgetbereich auswählen",
     expectedTimeline: "Erwarteter Zeitplan",
     expectedTimelinePlaceholder: "Zeitplan auswählen",
-    submitJobRequest: "Job-Anfrage senden",
+    submitProjectRequest: "Projekt-Anfrage senden",
     submitting: "Wird gesendet...",
     projectTypes: {
       webDevelopment: "Webentwicklung",
@@ -662,7 +662,7 @@ export const de = {
     composeEmail: "E-Mail verfassen",
     customizeQR: "QR anpassen",
     qrCode: "QR-Code",
-    jobRequests: "Job-Anfragen",
+    projectRequests: "Projekt-Anfragen",
     contactMessages: "Kontaktnachrichten",
     emailDialog: {
       title: "E-Mail verfassen",
