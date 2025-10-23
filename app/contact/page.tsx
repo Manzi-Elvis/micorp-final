@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import ContactPageClient from "./contact-client"
 export const metadata: Metadata = {
   title: "Contact Us | Mirror Corporation - Get in Touch for Technology Solutions",
   description: "Contact Mirror Corporation for custom software development, AI solutions, cybersecurity, and cloud services. Based in Kigali, Rwanda, serving clients across Africa and beyond. Get your free consultation today.",

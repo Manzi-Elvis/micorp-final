@@ -1,5 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
+import RequestProjectPageClient from "./request-project-client"
 export const metadata: Metadata = {
   title: "Request a Project | Mirror Corporation - Get Your Custom Software Development Quote",
   description: "Submit your project requirements to Mirror Corporation for custom software development, web applications, mobile apps, AI solutions, and digital transformation. Get a free quote from our expert team.",
