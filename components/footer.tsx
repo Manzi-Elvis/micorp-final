@@ -90,28 +90,23 @@ export default function Footer() {
             <h3 className="font-bold text-lg">{t("footer.services")}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("footer.webDevelopment")}
+                <Link href="/services/web-development" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/mobile-development" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Mobile Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/ai-ml" className="text-muted-foreground hover:text-foreground transition-colors">
+                  AI & Machine Learning
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("footer.mobileDevelopment")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("footer.customSoftware")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("footer.dataAnalytics")}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-muted-foreground hover:text-foreground transition-colors">
-                  {t("footer.cloudServices")}
+                  All Services
                 </Link>
               </li>
             </ul>
@@ -140,17 +135,74 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} Mirror Corporation. {t("footer.allRightsReserved")}
-          </p>
-          <div className="flex gap-4 text-sm">
-            <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
-              {t("footer.privacyPolicy")}
-            </Link>
-            <Link href="/terms-of-service" className="text-muted-foreground hover:text-foreground transition-colors">
-              {t("footer.termsOfService")}
-            </Link>
+        <div className="border-t mt-12 pt-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="space-y-4">
+              <h3 className="font-bold text-lg">Ready to Get Started?</h3>
+              <p className="text-muted-foreground">
+                Let's discuss your project and create a solution that drives your business forward.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                >
+                  Get Free Quote
+                </Link>
+                <Link 
+                  href="/request-project" 
+                  className="inline-flex items-center justify-center px-4 py-2 border border-input bg-background rounded-md hover:bg-accent transition-colors"
+                >
+                  Request Project
+                </Link>
+              </div>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-bold text-lg">Stay Updated</h3>
+              <p className="text-muted-foreground">
+                Follow us for the latest technology insights and company updates.
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/mi-corp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://instagram.com/mirror_corporation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/mirror-corporation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Mirror Corporation. {t("footer.allRightsReserved")}
+            </p>
+            <div className="flex gap-4 text-sm">
+              <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+                {t("footer.privacyPolicy")}
+              </Link>
+              <Link href="/terms-of-service" className="text-muted-foreground hover:text-foreground transition-colors">
+                {t("footer.termsOfService")}
+              </Link>
+            </div>
           </div>
         </div>
       </div>

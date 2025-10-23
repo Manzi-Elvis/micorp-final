@@ -1,9 +1,11 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Globe, Smartphone, Database, LineChart, ShieldCheck, Cloud, Cpu } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Code, Globe, Smartphone, Database, LineChart, ShieldCheck, Cloud, Cpu, ArrowRight } from "lucide-react"
 import { useTranslations } from "@/hooks/use-translations"
 
 export default function ServicesPageClient() {
@@ -100,13 +102,13 @@ export default function ServicesPageClient() {
 
       <section className="grid md:grid-cols-2 gap-8">
         {services.map((service) => (
-          <Card id={service.anchor} key={service.anchor} className="overflow-hidden transition-all hover:shadow-md">
+          <Card id={service.anchor} key={service.anchor} className="overflow-hidden transition-all hover:shadow-md group">
             <div className="relative h-48">
               <Image
                 src={service.image || "/placeholder.svg"}
                 alt={`${service.title} service illustration`}
                 fill
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-4">
@@ -125,6 +127,14 @@ export default function ServicesPageClient() {
                     {tag}
                   </Badge>
                 ))}
+              </div>
+              <div className="pt-2">
+                <Button asChild variant="outline" className="w-full">
+                  <Link href={`/services/${service.anchor}`}>
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
