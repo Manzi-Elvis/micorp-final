@@ -360,7 +360,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         name: t("teamPage.members.danny.name"),
         role: t("teamPage.members.danny.role"),
         bio: t("teamPage.members.danny.bio"),
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/members/danny.jpeg",
         location: "Kigali, Rwanda",
         joinDate: "2024",
         skills: ["Marketing", "Customer Relations", "Business Development", "Sales", "Client Management"],
@@ -437,7 +437,11 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
               src={member.image}
               alt={member.name}
               fill
-              className="object-cover"
+              className={`object-cover ${
+                member.slug === 'danny-ngabonziza' || member.slug === 'anna-amina' 
+                  ? 'object-[center_20%]' 
+                  : ''
+              }`}
             />
           </div>
           
