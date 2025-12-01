@@ -30,6 +30,7 @@ export default function Navbar() {
     { name: t("Home"), href: "/" },
     { name: t("About"), href: "/about" },
     { name: t("Services"), href: "/services" },
+    { name: t("Pricing"), href: "/pricing" },
     { name: t("Portfolio"), href: "/portfolio" },
     { name: t("Team"), href: "/team" },
     { name: t("Blog"), href: "/blog" },
@@ -117,4 +118,3 @@ export default function Navbar() {
     </header>
   )
 }
-
