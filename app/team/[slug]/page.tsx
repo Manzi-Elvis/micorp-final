@@ -290,9 +290,8 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         education: "Computer Science",
         achievements: ["Improved system reliability", "Automated deployment processes", "Optimized server performance"],
         social: {
-          github: "#",
-          linkedin: "#",
-          email: "devops@micorp.pro"
+          linkedin: "https://www.linkedin.com/in/mrelvis",
+          email: "elvismanzi@micorp.pro"
         },
         projects: [
           {
