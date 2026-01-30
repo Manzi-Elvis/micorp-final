@@ -290,6 +290,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
         education: "Computer Science",
         achievements: ["Improved system reliability", "Automated deployment processes", "Optimized server performance"],
         social: {
+          github: "https://github.com/Manzi-Elvis",
           linkedin: "https://www.linkedin.com/in/mrelvis",
           email: "elvismanzi@micorp.pro"
         },
@@ -298,7 +299,7 @@ export default function TeamMemberProfile({ params }: { params: Promise<{ slug: 
             name: "Backend Systems",
             description: "Robust backend infrastructure and APIs",
             tech: ["Node.js", "Docker", "AWS", "PostgreSQL"],
-            link: "#"
+            link: "https://github.com/Manzi-Elvis/MRE-Wallet-Engine-FRONTEND-"
           }
         ]
       },
