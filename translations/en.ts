@@ -327,52 +327,52 @@ export const en = {
       pazzo: {
         name: "Igiraneza Patrick",
         role: "Frontend Developer",
-        bio: "With over 15 years of experience in software architecture and development, Sarah leads our technical strategy and ensures we stay at the cutting edge of technology.",
+        bio: "With over 15 years of experience in software architecture and development, Patrick leads our technical strategy and ensures we stay at the cutting edge of technology.",
       },
       paccy: {
         name: "Kimana Pacifique",
         role: "Lead UX/UI Designer",
-        bio: "Marcus combines artistic talent with user-centered design principles to create intuitive and beautiful interfaces that delight users.",
+        bio: "Pacifique combines artistic talent with user-centered design principles to create intuitive and beautiful interfaces that delight users.",
       },
       queen: {
         name: "Umwamikazi Honorata",
         role: "Senior Videographer",
-        bio: "A problem-solver at heart, Aisha brings extensive experience in both frontend and backend development to create seamless, high-performance applications.",
+        bio: "A problem-solver at heart, Honorata brings extensive experience in both frontend and backend development to create seamless, high-performance applications.",
       },
       josh: {
         name: "Ijabo Joshua",
         role: "Data Science Lead",
-        bio: "David specializes in turning complex data into actionable insights, helping our clients make informed decisions based on solid analytics.",
+        bio: "Joshua specializes in turning complex data into actionable insights, helping our clients make informed decisions based on solid analytics.",
       },
       amina: {
         name: "Anna Anaise",
         role: "Senior Fullstack Developer",
-        bio: "With a keen eye for detail and excellent communication skills, Elena ensures our projects are delivered on time, within scope, and to the highest standards.",
+        bio: "With a keen eye for detail and excellent communication skills, Anaise ensures our projects are delivered on time, within scope, and to the highest standards.",
       },
       elvis: {
         name: "Manzi Rurangirwa Elvis",
         role: "Backend Developer",
-        bio: "Thomas specializes in automating and optimizing our development and deployment processes, ensuring smooth operations and scalability.",
+        bio: "Elvis specializes in automating and optimizing our development and deployment processes, ensuring smooth operations and scalability.",
       },
       faylinn: {
         name: "Ishimwe Faylinn",
         role: "Mobile Development Specialist",
-        bio: "Olivia is passionate about creating exceptional mobile experiences across platforms, with expertise in both iOS and Android development.",
+        bio: "Faylinn is passionate about creating exceptional mobile experiences across platforms, with expertise in both iOS and Android development.",
       },
       aliza: {
         name: "Iganza Aliza",
         role: "Cybersecurity Expert",
-        bio: "James ensures our solutions are secure by design, implementing robust security measures and staying ahead of potential threats.",
+        bio: "Aliza ensures our solutions are secure by design, implementing robust security measures and staying ahead of potential threats.",
       },
       danny: {
         name: "Ngabonziza Danny",
         role: "Marketing specialist",
-        bio: "Sophia works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
+        bio: "Danny works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
       },
       didier: {
         name: "Manirakiza Didier",
         role: "Lead Data Scientist",
-        bio: "Sophia works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
+        bio: "Didier works closely with our clients to ensure their needs are met and they get the most value from our solutions.",
       },
       rukundo: {
         name: "Rukundo Joseph",
@@ -380,7 +380,7 @@ export const en = {
         bio: "A creative professional with expertise in social media strategy and digital marketing. Joseph helps build our brand presence across various social platforms and engages with our community.",
       },
       arnoud: {
-        name: "Arnoud Kigenza",
+        name: "Arnaud Kigenza",
         role: "Digital Marketing Specialist",
         bio: "A results-driven marketing professional with extensive experience in digital campaigns and brand development. Arnoud focuses on driving growth and expanding our market reach.",
       },
