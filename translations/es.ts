@@ -324,12 +324,12 @@ export const es = {
       thierry: {
         name: "Ndayishimiye Thierry",
         role: "Especialista en Marketing",
-        bio: "Un líder visionario con pasión por la tecnología y la innovación. Chaste fundó Mirror Corporation con el objetivo de crear soluciones que realmente reflejen las necesidades de las empresas modernas.",
+        bio: "Un líder visionario con pasión por la tecnología y la innovación.",
       },
       pazzo: {
         name: "Igiraneza Patrick",
         role: "Desarrollador Frontend",
-        bio: "Con más de 15 años de experiencia en arquitectura y desarrollo de software, Sarah lidera nuestra estrategia técnica y asegura que nos mantengamos a la vanguardia de la tecnología.",
+        bio: "Con más de 15 años de experiencia en arquitectura y desarrollo de software, Patrick lidera nuestra estrategia técnica y asegura que nos mantengamos a la vanguardia de la tecnología.",
       },
       paccy: {
         name: "Kimana Pacifique",
@@ -339,42 +339,42 @@ export const es = {
       queen: {
         name: "Umwamikazi Honorata",
         role: "Videógrafa Senior",
-        bio: "Solucionadora de problemas de corazón, Aisha aporta amplia experiencia en desarrollo frontend y backend para crear aplicaciones fluidas y de alto rendimiento.",
+        bio: "Solucionadora de problemas de corazón, Honorata aporta amplia experiencia en desarrollo frontend y backend para crear aplicaciones fluidas y de alto rendimiento.",
       },
       josh: {
         name: "Ijabo Joshua",
         role: "Líder de Data Science",
-        bio: "David se especializa en convertir datos complejos en información procesable, ayudando a nuestros clientes a tomar decisiones informadas basadas en análisis sólidos.",
+        bio: "Joshua se especializa en convertir datos complejos en información procesable, ayudando a nuestros clientes a tomar decisiones informadas basadas en análisis sólidos.",
       },
       amina: {
         name: "Anna Anaise",
         role: "Desarrolladora Fullstack Senior",
-        bio: "Con un ojo para los detalles y excelentes habilidades de comunicación, Elena asegura que nuestros proyectos se entreguen a tiempo, dentro del alcance y según los más altos estándares.",
+        bio: "Con un ojo para los detalles y excelentes habilidades de comunicación, Anna asegura que nuestros proyectos se entreguen a tiempo, dentro del alcance y según los más altos estándares.",
       },
       elvis: {
         name: "Manzi Rurangirwa Elvis",
         role: "Desarrollador Backend",
-        bio: "Thomas se especializa en automatizar y optimizar nuestros procesos de desarrollo e implementación, asegurando operaciones fluidas y escalabilidad.",
+        bio: "Elvis se especializa en automatizar y optimizar nuestros procesos de desarrollo e implementación, asegurando operaciones fluidas y escalabilidad.",
       },
       faylinn: {
         name: "Ishimwe Faylinn",
         role: "Especialista en Desarrollo Móvil",
-        bio: "Olivia es apasionada por crear experiencias móviles excepcionales en todas las plataformas, con experiencia en desarrollo iOS y Android.",
+        bio: "Faylinn es apasionada por crear experiencias móviles excepcionales en todas las plataformas, con experiencia en desarrollo iOS y Android.",
       },
       aliza: {
         name: "Iganza Aliza",
         role: "Experta en Ciberseguridad",
-        bio: "James asegura que nuestras soluciones sean seguras por diseño, implementando medidas de seguridad robustas y manteniéndose adelante de las amenazas potenciales.",
+        bio: "Aliza asegura que nuestras soluciones sean seguras por diseño, implementando medidas de seguridad robustas y manteniéndose adelante de las amenazas potenciales.",
       },
       danny: {
         name: "Ngabonziza Danny",
         role: "Especialista en Marketing",
-        bio: "Sophia trabaja en estrecha colaboración con nuestros clientes para asegurar que sus necesidades sean satisfechas y obtengan el máximo valor de nuestras soluciones.",
+        bio: "Danny trabaja en estrecha colaboración con nuestros clientes para asegurar que sus necesidades sean satisfechas y obtengan el máximo valor de nuestras soluciones.",
       },
       didier: {
         name: "Manirakiza Didier",
         role: "Líder de Data Scientist",
-        bio: "Sophia trabaja en estrecha colaboración con nuestros clientes para asegurar que sus necesidades sean satisfechas y obtengan el máximo valor de nuestras soluciones.",
+        bio: "Didier trabaja en estrecha colaboración con nuestros clientes para asegurar que sus necesidades sean satisfechas y obtengan el máximo valor de nuestras soluciones.",
       },
       rukundo: {
         name: "Rukundo Joseph",
@@ -382,7 +382,7 @@ export const es = {
         bio: "Un profesional creativo con experiencia en estrategia de redes sociales y marketing digital. Joseph ayuda a construir nuestra presencia de marca en varias plataformas sociales y se involucra con nuestra comunidad.",
       },
       arnoud: {
-        name: "Arnoud Kigenza",
+        name: "Arnaud Kigenza",
         role: "Especialista en Marketing Digital",
         bio: "Un profesional de marketing orientado a resultados con amplia experiencia en campañas digitales y desarrollo de marca. Arnoud se enfoca en impulsar el crecimiento y expandir nuestro alcance de mercado.",
       },
