@@ -357,17 +357,17 @@ export const de = {
       elvis: {
         name: "Manzi Rurangirwa Elvis",
         role: "Backend-Entwickler",
-        bio: "Thomas spezialisiert sich auf die Automatisierung und Optimierung unserer Entwicklungs- und Bereitstellungsprozesse und sorgt für reibungslose Abläufe und Skalierbarkeit.",
+        bio: "Elvis spezialisiert sich auf die Automatisierung und Optimierung unserer Entwicklungs- und Bereitstellungsprozesse und sorgt für reibungslose Abläufe und Skalierbarkeit.",
       },
       faylinn: {
         name: "Ishimwe Faylinn",
         role: "Mobile-Entwicklungsspezialist",
-        bio: "Olivia ist leidenschaftlich daran interessiert, außergewöhnliche mobile Erfahrungen auf allen Plattformen zu schaffen, mit Expertise in iOS- und Android-Entwicklung.",
+        bio: "Faylinn ist leidenschaftlich daran interessiert, außergewöhnliche mobile Erfahrungen auf allen Plattformen zu schaffen, mit Expertise in iOS- und Android-Entwicklung.",
       },
       aliza: {
         name: "Iganza Aliza",
         role: "Cybersicherheitsexperte",
-        bio: "James stellt sicher, dass unsere Lösungen von Grund auf sicher sind, indem er robuste Sicherheitsmaßnahmen implementiert und potenziellen Bedrohungen voraus ist.",
+        bio: "Aliza stellt sicher, dass unsere Lösungen von Grund auf sicher sind, indem er robuste Sicherheitsmaßnahmen implementiert und potenziellen Bedrohungen voraus ist.",
       },
       danny: {
         name: "Ngabonziza Danny",
