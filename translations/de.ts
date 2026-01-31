@@ -327,7 +327,7 @@ export const de = {
       thierry: {
         name: "Ndayishimiye Thierry",
         role: "Marketing-Spezialist",
-        bio: "Ein visionärer Führer mit einer Leidenschaft für Technologie und Innovation. Chaste gründete Mirror Corporation mit dem Ziel, Lösungen zu schaffen, die wirklich die Bedürfnisse moderner Unternehmen widerspiegeln.",
+        bio: "Ein visionärer Führer mit einer Leidenschaft für Technologie und Innovation. Thierry gründete Mirror Corporation mit dem Ziel, Lösungen zu schaffen, die wirklich die Bedürfnisse moderner Unternehmen widerspiegeln.",
       },
       pazzo: {
         name: "Igiraneza Patrick",
@@ -372,12 +372,12 @@ export const de = {
       danny: {
         name: "Ngabonziza Danny",
         role: "Marketing-Spezialist",
-        bio: "Sophia arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass ihre Bedürfnisse erfüllt werden und sie den größten Nutzen aus unseren Lösungen ziehen.",
+        bio: "Danny arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass ihre Bedürfnisse erfüllt werden und sie den größten Nutzen aus unseren Lösungen ziehen.",
       },
       didier: {
         name: "Manirakiza Didier",
         role: "Lead Data Scientist",
-        bio: "Sophia arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass ihre Bedürfnisse erfüllt werden und sie den größten Nutzen aus unseren Lösungen ziehen.",
+        bio: "Didier arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass ihre Bedürfnisse erfüllt werden und sie den größten Nutzen aus unseren Lösungen ziehen.",
       },
       rukundo: {
         name: "Rukundo Joseph",
@@ -385,7 +385,7 @@ export const de = {
         bio: "Ein kreativer Profi mit Expertise in Social Media-Strategie und digitalem Marketing. Joseph hilft beim Aufbau unserer Markenpräsenz auf verschiedenen sozialen Plattformen und engagiert sich mit unserer Community.",
       },
       arnoud: {
-        name: "Arnoud Kigenza",
+        name: "Arnaud Kigenza",
         role: "Digital Marketing Spezialist",
         bio: "Ein ergebnisorientierter Marketing-Profi mit umfangreicher Erfahrung in digitalen Kampagnen und Markenentwicklung. Arnoud konzentriert sich auf Wachstum und die Erweiterung unserer Marktreichweite.",
       },

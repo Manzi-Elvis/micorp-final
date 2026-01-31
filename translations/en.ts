@@ -321,13 +321,13 @@ export const en = {
       },
       thierry: {
         name: "Ndayishimiye Thierry",
-        role: "Marketing Specialist",
-        bio: "A visionary leader with a passion for technology and innovation. Chaste founded Mirror Corporation with the goal of creating solutions that truly reflect the needs of modern businesses.",
+        role: "Senior Software Developer",
+        bio: "A visionary leader with a passion for technology and innovation. ",
       },
       pazzo: {
         name: "Igiraneza Patrick",
         role: "Frontend Developer",
-        bio: "With over 15 years of experience in software architecture and development, Patrick leads our technical strategy and ensures we stay at the cutting edge of technology.",
+        bio: "With experience in software architecture and development, Patrick leads our technical strategy and ensures we stay at the cutting edge of technology.",
       },
       paccy: {
         name: "Kimana Pacifique",
@@ -351,7 +351,7 @@ export const en = {
       },
       elvis: {
         name: "Manzi Rurangirwa Elvis",
-        role: "Backend Developer",
+        role: "Backend Engineer",
         bio: "Elvis specializes in automating and optimizing our development and deployment processes, ensuring smooth operations and scalability.",
       },
       faylinn: {
@@ -382,7 +382,7 @@ export const en = {
       arnoud: {
         name: "Arnaud Kigenza",
         role: "Digital Marketing Specialist",
-        bio: "A results-driven marketing professional with extensive experience in digital campaigns and brand development. Arnoud focuses on driving growth and expanding our market reach.",
+        bio: "A results-driven marketing professional with extensive experience in digital campaigns and brand development. Arnaud focuses on driving growth and expanding our market reach.",
       },
     },
     joinUs: {
