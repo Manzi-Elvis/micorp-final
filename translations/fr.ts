@@ -334,47 +334,47 @@ export const fr = {
       paccy: {
         name: "Kimana Pacifique",
         role: "Designer UX/UI Principal",
-        bio: "Marcus combine talent artistique et principes de conception centrés sur l'utilisateur pour créer des interfaces intuitives et belles qui ravissent les utilisateurs.",
+        bio: "Pacifique combine talent artistique et principes de conception centrés sur l'utilisateur pour créer des interfaces intuitives et belles qui ravissent les utilisateurs.",
       },
       queen: {
         name: "Umwamikazi Honorata",
         role: "Vidéographe Senior",
-        bio: "Résolveur de problèmes dans l'âme, Aisha apporte une vaste expérience en développement frontend et backend pour créer des applications fluides et performantes.",
+        bio: "Résolveur de problèmes dans l'âme, Honorata apporte une vaste expérience en développement frontend et backend pour créer des applications fluides et performantes.",
       },
       josh: {
         name: "Ijabo Joshua",
         role: "Responsable Data Science",
-        bio: "David se spécialise dans la transformation de données complexes en informations exploitables, aidant nos clients à prendre des décisions éclairées basées sur des analyses solides.",
+        bio: "Joshua se spécialise dans la transformation de données complexes en informations exploitables, aidant nos clients à prendre des décisions éclairées basées sur des analyses solides.",
       },
       amina: {
         name: "Anna Anaise",
         role: "Développeuse Full-Stack Senior",
-        bio: "Avec un œil attentif aux détails et d'excellentes compétences en communication, Elena s'assure que nos projets sont livrés à temps, dans le cadre prévu et selon les normes les plus élevées.",
+        bio: "Avec un œil attentif aux détails et d'excellentes compétences en communication, Anna s'assure que nos projets sont livrés à temps, dans le cadre prévu et selon les normes les plus élevées.",
       },
       elvis: {
         name: "Manzi Rurangirwa Elvis",
         role: "Développeur Backend",
-        bio: "Thomas se spécialise dans l'automatisation et l'optimisation de nos processus de développement et de déploiement, assurant des opérations fluides et une évolutivité.",
+        bio: "Elvis se spécialise dans l'automatisation et l'optimisation de nos processus de développement et de déploiement, assurant des opérations fluides et une évolutivité.",
       },
       faylinn: {
         name: "Ishimwe Faylinn",
         role: "Spécialiste en Développement Mobile",
-        bio: "Olivia est passionnée par la création d'expériences mobiles exceptionnelles sur toutes les plateformes, avec une expertise en développement iOS et Android.",
+        bio: "Faylinn est passionnée par la création d'expériences mobiles exceptionnelles sur toutes les plateformes, avec une expertise en développement iOS et Android.",
       },
       aliza: {
         name: "Iganza Aliza",
         role: "Experte en Cybersécurité",
-        bio: "James s'assure que nos solutions sont sécurisées par conception, mettant en œuvre des mesures de sécurité robustes et restant en avance sur les menaces potentielles.",
+        bio: "Aliza s'assure que nos solutions sont sécurisées par conception, mettant en œuvre des mesures de sécurité robustes et restant en avance sur les menaces potentielles.",
       },
       danny: {
         name: "Ngabonziza Danny",
         role: "Spécialiste Marketing",
-        bio: "Sophia travaille en étroite collaboration avec nos clients pour s'assurer que leurs besoins sont satisfaits et qu'ils tirent le maximum de valeur de nos solutions.",
+        bio: "Danny travaille en étroite collaboration avec nos clients pour s'assurer que leurs besoins sont satisfaits et qu'ils tirent le maximum de valeur de nos solutions.",
       },
       didier: {
         name: "Manirakiza Didier",
         role: "Responsable Data Scientist",
-        bio: "Sophia travaille en étroite collaboration avec nos clients pour s'assurer que leurs besoins sont satisfaits et qu'ils tirent le maximum de valeur de nos solutions.",
+        bio: "Didier travaille en étroite collaboration avec nos clients pour s'assurer que leurs besoins sont satisfaits et qu'ils tirent le maximum de valeur de nos solutions.",
       },
       rukundo: {
         name: "Rukundo Joseph",
@@ -382,7 +382,7 @@ export const fr = {
         bio: "Un professionnel créatif avec une expertise en stratégie de médias sociaux et marketing digital. Joseph aide à construire notre présence de marque sur diverses plateformes sociales et s'engage avec notre communauté.",
       },
       arnoud: {
-        name: "Arnoud Kigenza",
+        name: "Arnaud Kigenza",
         role: "Spécialiste Marketing Digital",
         bio: "Un professionnel du marketing axé sur les résultats avec une vaste expérience en campagnes digitales et développement de marque. Arnoud se concentre sur la croissance et l'expansion de notre portée de marché.",
       },
